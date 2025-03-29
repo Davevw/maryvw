@@ -1,4 +1,3 @@
-
 import { cn } from "@/lib/utils";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
@@ -10,7 +9,11 @@ const Gallery = () => {
       title: "Stretch and Release",
       image: "/lovable-uploads/c08a3fb7-ce6e-46bf-9d3e-622ebd5dd1db.png" 
     },
-    { id: 2, title: "Strength Training" },
+    { 
+      id: 2, 
+      title: "Strength Training",
+      image: "/lovable-uploads/2a5bba63-8751-4b38-a9e8-df99db58be4d.png" 
+    },
     { id: 3, title: "Outdoor Fitness" },
     { id: 4, title: "Wellness Workshop" },
   ];
