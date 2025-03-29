@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,11 +43,8 @@ const Navbar = () => {
       )}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <a 
-          href="#home" 
-          className="text-xl md:text-2xl font-serif tracking-tight"
-        >
-          Mary's Fitness Channel
+        <a href="#home" className="flex items-center">
+          <Logo variant={scrolled ? "small" : "default"} />
         </a>
 
         {/* Desktop menu */}
