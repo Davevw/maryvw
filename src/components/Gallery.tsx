@@ -21,7 +21,11 @@ const Gallery = () => {
       tagline: "Out You Go",
       image: "/lovable-uploads/b532e662-de4e-451c-8749-c43f1882fc9a.png" 
     },
-    { id: 4, title: "Wellness Workshop" },
+    { 
+      id: 4, 
+      title: "Wellness Workshop",
+      image: "/lovable-uploads/88b58f3c-f71e-4636-91a7-018d265e5d66.png" 
+    },
   ];
 
   return (
