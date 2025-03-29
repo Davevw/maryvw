@@ -45,8 +45,8 @@ const Hero = () => {
         <div className="md:block relative h-full w-full animate-fade-in opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
           <div className="rounded-md overflow-hidden h-[70vh] max-h-[600px] w-full">
             <img 
-              src="/lovable-uploads/6df31c73-0c61-4174-b7d1-097f2c69ce00.png"
-              alt="Wooden bridge path"
+              src="/lovable-uploads/dd259007-9b43-49ba-abc0-efaadaa28c38.png"
+              alt="Woman standing on foggy road with inspirational quote"
               className="w-full h-full object-cover"
             />
           </div>
