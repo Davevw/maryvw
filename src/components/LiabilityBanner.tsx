@@ -10,7 +10,7 @@ const LiabilityBanner = () => {
           className="bg-white/10 border-white text-white hover:bg-white/20 whitespace-nowrap font-medium"
           onClick={() => window.open('https://form.jotform.com/243354759406160', '_blank')}
         >
-          Complete Waiver Form
+          Liability Waiver - Click Here
         </Button>
       </div>
     </div>
