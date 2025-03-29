@@ -29,7 +29,8 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
-    { name: "Work", href: "#work" },
+    { name: "Topics", href: "#work" },
+    { name: "Gallery", href: "#gallery" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -45,7 +46,7 @@ const Navbar = () => {
           href="#home" 
           className="text-xl md:text-2xl font-serif tracking-tight"
         >
-          Jane Doe
+          Mary's Fitness Channel
         </a>
 
         {/* Desktop menu */}
@@ -59,6 +60,12 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
+          <a
+            href="#liability"
+            className="text-sm uppercase tracking-wide text-primary"
+          >
+            Liability Waiver
+          </a>
         </div>
 
         {/* Mobile menu button */}
@@ -84,6 +91,13 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
+          <a
+            href="#liability"
+            className="py-4 text-lg uppercase tracking-wide text-primary"
+            onClick={toggleMenu}
+          >
+            Liability Waiver
+          </a>
         </div>
       )}
     </nav>

@@ -3,23 +3,23 @@ import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="h-screen flex flex-col justify-center relative px-6 md:px-12">
+    <section id="home" className="h-screen flex flex-col justify-center relative px-6 md:px-12 bg-secondary/20">
       <div className="max-w-7xl mx-auto w-full">
         <div className="animate-fade-in opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-medium mb-6 leading-tight">
-            Hello, I'm Jane Doe.
+            Mary's Fitness Channel
           </h1>
         </div>
         
         <div className="animate-fade-in opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
           <h2 className="text-xl md:text-3xl font-serif font-normal mb-8 text-muted-foreground max-w-2xl">
-            Writer, designer and creative storyteller based in New York.
+            Discover a World of Fitness and Health
           </h2>
         </div>
         
         <div className="animate-fade-in opacity-0" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
           <p className="text-base md:text-lg max-w-md font-light mb-12">
-            I craft narratives and experiences that connect, inspire, and make a lasting impression.
+            Welcome to Mary's Fitness & Lifestyle Channel. Here, you'll find everything you need to live your best life.
           </p>
         </div>
         
@@ -29,7 +29,7 @@ const Hero = () => {
           style={{ animationDelay: "0.8s", animationFillMode: "forwards" }}
         >
           <span className="text-sm uppercase tracking-widest mr-2">
-            Learn more
+            Explore
           </span>
           <ArrowDown 
             size={16} 
@@ -49,20 +49,20 @@ const Hero = () => {
             Instagram
           </a>
           <a 
-            href="https://twitter.com" 
+            href="https://youtube.com" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-xs uppercase tracking-wider link-underline"
           >
-            Twitter
+            YouTube
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://facebook.com" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-xs uppercase tracking-wider link-underline"
           >
-            LinkedIn
+            Facebook
           </a>
         </div>
       </div>

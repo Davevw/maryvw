@@ -7,7 +7,10 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 md:mb-0">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Jane Doe. All rights reserved.
+            Copyright © {currentYear} MaryVW - All Rights Reserved.
+          </p>
+          <p className="text-xs text-muted-foreground mt-2">
+            Powered by GoDaddy
           </p>
         </div>
         
@@ -28,7 +31,7 @@ const Footer = () => {
             href="#work"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
-            Work
+            Topics
           </a>
           <a 
             href="#contact"
@@ -37,6 +40,13 @@ const Footer = () => {
             Contact
           </a>
         </div>
+      </div>
+      
+      <div id="liability" className="mt-12 pt-12 border-t border-border max-w-7xl mx-auto">
+        <h3 className="text-xl font-serif mb-4">Liability Waiver</h3>
+        <p className="text-sm text-muted-foreground mb-6">
+          By participating in any fitness program or using any fitness-related information provided by Mary's Fitness Channel, you acknowledge that there are risks associated with all physical activity. You should consult with your physician before beginning any exercise program. Mary's Fitness Channel is not responsible for any injuries or health problems you may experience or develop while participating in any exercise program.
+        </p>
       </div>
     </footer>
   );

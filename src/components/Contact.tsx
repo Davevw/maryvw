@@ -11,6 +11,7 @@ const Contact = () => {
     name: "",
     email: "",
     message: "",
+    files: null as File[] | null,
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -19,6 +20,16 @@ const Contact = () => {
       ...prev,
       [name]: value
     }));
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files) {
+      const filesArray = Array.from(e.target.files);
+      setFormData(prev => ({
+        ...prev,
+        files: filesArray
+      }));
+    }
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -36,56 +47,60 @@ const Contact = () => {
       name: "",
       email: "",
       message: "",
+      files: null,
     });
   };
 
   return (
     <section id="contact" className="py-24 md:py-32 px-6 md:px-12 bg-secondary">
       <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-serif mb-8 text-center">Contact Me</h2>
+        <p className="text-center mb-12 max-w-2xl mx-auto">
+          You can send me a message or ask me a general question using this form.
+        </p>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
           <div>
-            <h2 className="text-3xl md:text-4xl font-serif mb-6">Let's Connect</h2>
-            <p className="text-lg mb-8 max-w-md">
-              Have a project in mind or just want to say hello? I'd love to hear from you. 
-              Fill out the form or reach out directly.
-            </p>
+            <h3 className="text-xl font-serif mb-6">Get in Touch!</h3>
             
-            <div className="mb-12">
-              <div className="mb-6">
-                <h3 className="text-sm uppercase tracking-wider mb-2">Email</h3>
-                <a href="mailto:hello@example.com" className="text-lg link-underline">
-                  hello@example.com
+            <div className="mb-8">
+              <h4 className="text-sm uppercase tracking-wider mb-2">Address</h4>
+              <p>Mary's Fitness and Lifestyle Channel</p>
+              <p>Oceanside, California 92054, United States</p>
+            </div>
+            
+            <div className="mb-8">
+              <h4 className="text-sm uppercase tracking-wider mb-2">Hours</h4>
+              <p>Classes are on Zoom and in person. Contact us for a Link to Scheduled Classes.</p>
+            </div>
+            
+            <div>
+              <h4 className="text-sm uppercase tracking-wider mb-2">Social</h4>
+              <div className="flex space-x-6">
+                <a 
+                  href="https://instagram.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-lg link-underline"
+                >
+                  Instagram
                 </a>
-              </div>
-              
-              <div>
-                <h3 className="text-sm uppercase tracking-wider mb-2">Social</h3>
-                <div className="flex space-x-6">
-                  <a 
-                    href="https://instagram.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-lg link-underline"
-                  >
-                    Instagram
-                  </a>
-                  <a 
-                    href="https://twitter.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-lg link-underline"
-                  >
-                    Twitter
-                  </a>
-                  <a 
-                    href="https://linkedin.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-lg link-underline"
-                  >
-                    LinkedIn
-                  </a>
-                </div>
+                <a 
+                  href="https://youtube.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-lg link-underline"
+                >
+                  YouTube
+                </a>
+                <a 
+                  href="https://facebook.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-lg link-underline"
+                >
+                  Facebook
+                </a>
               </div>
             </div>
           </div>
@@ -101,14 +116,13 @@ const Contact = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  required
                   className="bg-background border-border"
                 />
               </div>
               
               <div>
                 <label htmlFor="email" className="text-sm uppercase tracking-wider mb-2 block">
-                  Email
+                  Email*
                 </label>
                 <Input
                   id="email"
@@ -130,18 +144,56 @@ const Contact = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  required
                   rows={5}
                   className="bg-background border-border resize-none"
                 />
               </div>
               
-              <Button 
-                type="submit" 
-                className="mt-4 uppercase tracking-wider text-sm px-10 py-6"
-              >
-                Send Message
-              </Button>
+              <div>
+                <label htmlFor="files" className="text-sm uppercase tracking-wider mb-2 block">
+                  Attach Files
+                </label>
+                <Input
+                  id="files"
+                  name="files"
+                  type="file"
+                  multiple
+                  onChange={handleFileChange}
+                  className="bg-background border-border"
+                />
+                <p className="text-xs text-muted-foreground mt-2">
+                  {formData.files ? `Attachments (${formData.files.length})` : "Attachments (0)"}
+                </p>
+              </div>
+              
+              <p className="text-xs text-muted-foreground">
+                This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+              </p>
+              
+              <div className="flex space-x-4">
+                <Button 
+                  type="submit" 
+                  className="uppercase tracking-wider text-sm px-10 py-6"
+                >
+                  Send
+                </Button>
+                
+                <Button 
+                  type="button" 
+                  variant="outline"
+                  className="uppercase tracking-wider text-sm px-10 py-6"
+                  onClick={() => {
+                    setFormData({
+                      name: "",
+                      email: "",
+                      message: "",
+                      files: null,
+                    });
+                  }}
+                >
+                  Cancel
+                </Button>
+              </div>
             </form>
           </div>
         </div>
