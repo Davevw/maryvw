@@ -6,13 +6,6 @@ const Hero = () => {
     <section 
       id="home" 
       className="h-screen flex flex-col justify-center relative px-6 md:px-12 bg-secondary/20"
-      style={{
-        backgroundImage: "url('/lovable-uploads/2afddb83-3441-45ed-ab7f-f3ba7e5234a8.png')",
-        backgroundSize: "contain",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundBlendMode: "overlay"
-      }}
     >
       <div className="max-w-7xl mx-auto w-full">
         <div className="animate-fade-in opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
