@@ -19,12 +19,6 @@ const Logo = ({ className, variant = "default" }: LogoProps) => {
           className="object-contain w-full h-full"
         />
       </div>
-      <span className={cn(
-        "font-serif tracking-tight ml-2",
-        variant === "default" ? "text-xl md:text-2xl" : "text-lg"
-      )}>
-        Mary's Fitness Channel
-      </span>
     </div>
   );
 };
