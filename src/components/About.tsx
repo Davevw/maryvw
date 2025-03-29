@@ -1,5 +1,6 @@
 
 import { cn } from "@/lib/utils";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const About = () => {
   return (
@@ -25,13 +26,14 @@ const About = () => {
           </div>
           
           <div className="flex items-center justify-center md:justify-end">
-            <div className="relative w-full max-w-md aspect-[3/4] bg-muted overflow-hidden">
-              <div className={cn(
-                "absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5",
-                "flex items-center justify-center text-muted-foreground"
-              )}>
-                <span className="text-sm">Mary's Portrait</span>
-              </div>
+            <div className="relative w-full max-w-md aspect-[3/4] overflow-hidden rounded-md border border-muted shadow-sm">
+              <AspectRatio ratio={3/4}>
+                <img 
+                  src="/lovable-uploads/a89307d2-1e20-4f62-a399-3579f51c505f.png" 
+                  alt="Mary lifting weights" 
+                  className="object-cover w-full h-full"
+                />
+              </AspectRatio>
             </div>
           </div>
         </div>
