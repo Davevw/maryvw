@@ -11,7 +11,7 @@ const Logo = ({ className, variant = "default" }: LogoProps) => {
     <div className={cn("flex items-center", className)}>
       <div className={cn(
         "relative",
-        variant === "default" ? "h-[13.2rem] w-[13.2rem]" : "h-[8.8rem] w-[8.8rem]"
+        variant === "default" ? "h-[6.6rem] w-[6.6rem]" : "h-[4.4rem] w-[4.4rem]"
       )}>
         <img 
           src="/lovable-uploads/2afddb83-3441-45ed-ab7f-f3ba7e5234a8.png" 
