@@ -24,7 +24,7 @@ const WorkItem = ({ title, category, year, description, index }: WorkItemProps) 
         </p>
         <div className="inline-flex items-center">
           <span className="text-sm uppercase tracking-wider mr-2">
-            View project
+            View program
           </span>
           <ArrowRight 
             size={16} 
@@ -40,35 +40,35 @@ const WorkItem = ({ title, category, year, description, index }: WorkItemProps) 
 const Work = () => {
   const projects = [
     {
-      title: "Brand Identity for Lunar",
-      category: "Branding",
+      title: "Personal Training Sessions",
+      category: "Fitness",
       year: "2023",
-      description: "A comprehensive brand identity for Lunar, a sustainable fashion brand focused on ethical production and timeless design."
+      description: "Customized one-on-one training sessions designed to meet your specific fitness goals, whether it's weight loss, muscle gain, or improved overall health and wellness."
     },
     {
-      title: "Editorial Design for Anthology Magazine",
-      category: "Editorial",
+      title: "Group Fitness Classes",
+      category: "Wellness",
       year: "2022",
-      description: "Art direction and editorial design for Anthology, a biannual print publication exploring the intersection of art, culture, and society."
+      description: "Energetic and motivating group classes including yoga, HIIT, and strength training that build community while helping participants achieve their fitness goals."
     },
     {
-      title: "Campaign Strategy for Evergreen",
-      category: "Strategy",
+      title: "Nutrition Coaching",
+      category: "Health",
       year: "2022",
-      description: "Developed and executed a multi-channel marketing campaign for Evergreen, increasing brand awareness by 45% and driving a 30% increase in sales."
+      description: "Comprehensive nutrition plans tailored to your lifestyle and fitness objectives, with ongoing support to help you make sustainable dietary changes."
     },
     {
-      title: "Website for Atelier Studios",
+      title: "Online Fitness Programs",
       category: "Digital",
       year: "2021",
-      description: "Designed and directed the development of a new website for Atelier Studios, a collective of independent artists and designers."
+      description: "Accessible workout programs you can follow from anywhere, complete with video tutorials, progress tracking, and virtual coaching support."
     },
   ];
 
   return (
     <section id="work" className="py-24 md:py-32 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-serif mb-16">Selected Work</h2>
+        <h2 className="text-3xl md:text-4xl font-serif mb-16">Featured Programs</h2>
         
         <div>
           {projects.map((project, index) => (
