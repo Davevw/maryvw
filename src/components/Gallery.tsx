@@ -1,3 +1,4 @@
+
 import { cn } from "@/lib/utils";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
@@ -14,7 +15,12 @@ const Gallery = () => {
       title: "Strength Training",
       image: "/lovable-uploads/2a5bba63-8751-4b38-a9e8-df99db58be4d.png" 
     },
-    { id: 3, title: "Outdoor Fitness" },
+    { 
+      id: 3, 
+      title: "Outdoor Fitness",
+      tagline: "Out You Go",
+      image: "/lovable-uploads/b532e662-de4e-451c-8749-c43f1882fc9a.png" 
+    },
     { id: 4, title: "Wellness Workshop" },
   ];
 
@@ -45,8 +51,11 @@ const Gallery = () => {
                   <span className="text-sm">{item.title}</span>
                 </div>
               )}
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center">
                 <span className="text-white text-sm font-medium">{item.title}</span>
+                {item.tagline && (
+                  <span className="text-white/80 text-xs mt-1 italic">{item.tagline}</span>
+                )}
               </div>
             </div>
           ))}
