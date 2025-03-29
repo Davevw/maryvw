@@ -104,15 +104,6 @@ const Navbar = () => {
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
-              
-              <NavigationMenuItem>
-                <a
-                  href="#liability"
-                  className="text-sm uppercase tracking-wide text-primary px-4 py-2"
-                >
-                  Liability Waiver
-                </a>
-              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
         </div>
@@ -158,13 +149,6 @@ const Navbar = () => {
           >
             Dog Sitting
           </Link>
-          <a
-            href="#liability"
-            className="py-4 text-lg uppercase tracking-wide text-primary"
-            onClick={toggleMenu}
-          >
-            Liability Waiver
-          </a>
         </div>
       )}
     </nav>
