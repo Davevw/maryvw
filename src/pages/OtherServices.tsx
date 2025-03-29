@@ -22,6 +22,10 @@ const OtherServices = () => {
                 is treated like family with personalized attention, regular walks, and lots of playtime.
               </p>
               
+              <p className="text-base md:text-lg mb-6 italic text-primary font-medium">
+                "A treat for every visit."
+              </p>
+              
               <Card className="mb-8">
                 <CardHeader>
                   <CardTitle>Service Pricing</CardTitle>
@@ -35,6 +39,14 @@ const OtherServices = () => {
                     <li className="flex justify-between items-center border-b pb-2">
                       <span className="font-medium">Overnight Stay</span>
                       <span className="font-bold">$100</span>
+                    </li>
+                    <li className="flex justify-between items-center border-b pb-2">
+                      <span className="font-medium">Stretch and Release</span>
+                      <span className="font-bold">$50/hr</span>
+                    </li>
+                    <li className="flex justify-between items-center border-b pb-2">
+                      <span className="font-medium">Wash and Fluff</span>
+                      <span className="font-bold">$75</span>
                     </li>
                     <li className="flex justify-between items-center">
                       <span className="font-medium">Multiple Service Discount</span>
