@@ -42,7 +42,7 @@ const Hero = () => {
           </a>
         </div>
         
-        <div className="hidden md:block relative h-full w-full animate-fade-in opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
+        <div className="md:block relative h-full w-full animate-fade-in opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
           <div className="rounded-md overflow-hidden h-[70vh] max-h-[600px] w-full">
             <img 
               src="/lovable-uploads/6df31c73-0c61-4174-b7d1-097f2c69ce00.png"
