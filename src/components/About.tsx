@@ -26,7 +26,7 @@ const About = () => {
           </div>
           
           <div className="flex items-center justify-center md:justify-end">
-            <div className="relative w-full max-w-md aspect-[3/4] overflow-hidden rounded-md border border-muted shadow-sm">
+            <div className="relative w-full max-w-md aspect-[3/4] overflow-hidden rounded-md border border-muted shadow-sm scale-90">
               <AspectRatio ratio={3/4}>
                 <img 
                   src="/lovable-uploads/6cc29263-f605-43d0-8286-693ebbdac6e4.png" 
