@@ -7,7 +7,7 @@ const Hero = () => {
       id="home" 
       className="h-screen flex flex-col justify-center relative px-6 md:px-12 bg-secondary/20"
       style={{
-        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('/lovable-uploads/8666508e-ded0-496e-aec5-4f0fe0e974ce.png')",
+        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('/lovable-uploads/c08a3fb7-ce6e-46bf-9d3e-622ebd5dd1db.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
