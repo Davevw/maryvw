@@ -29,8 +29,8 @@ const About = () => {
             <div className="relative w-full max-w-md aspect-[3/4] overflow-hidden rounded-md border border-muted shadow-sm">
               <AspectRatio ratio={3/4}>
                 <img 
-                  src="/lovable-uploads/a89307d2-1e20-4f62-a399-3579f51c505f.png" 
-                  alt="Mary lifting weights" 
+                  src="/lovable-uploads/6cc29263-f605-43d0-8286-693ebbdac6e4.png" 
+                  alt="Trail path through trees and nature" 
                   className="object-cover w-full h-full"
                 />
               </AspectRatio>
