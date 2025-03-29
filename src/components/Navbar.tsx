@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,11 +29,12 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Topics", href: "#work" },
-    { name: "Gallery", href: "#gallery" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/#about" },
+    { name: "Topics", href: "/#work" },
+    { name: "Gallery", href: "/#gallery" },
+    { name: "Other Services", href: "/other-services" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -43,20 +45,30 @@ const Navbar = () => {
       )}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <a href="#home" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <Logo variant={scrolled ? "small" : "default"} />
-        </a>
+        </Link>
 
         {/* Desktop menu */}
         <div className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-sm uppercase tracking-wide link-underline"
-            >
-              {link.name}
-            </a>
+            link.href.startsWith('/#') ? (
+              <a
+                key={link.name}
+                href={link.href.substring(1)}
+                className="text-sm uppercase tracking-wide link-underline"
+              >
+                {link.name}
+              </a>
+            ) : (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="text-sm uppercase tracking-wide link-underline"
+              >
+                {link.name}
+              </Link>
+            )
           ))}
           <a
             href="#liability"
@@ -80,14 +92,25 @@ const Navbar = () => {
       {isOpen && (
         <div className="fixed inset-0 top-16 bg-background z-40 flex flex-col items-center pt-20 md:hidden animate-fade-in">
           {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="py-4 text-lg uppercase tracking-wide"
-              onClick={toggleMenu}
-            >
-              {link.name}
-            </a>
+            link.href.startsWith('/#') ? (
+              <a
+                key={link.name}
+                href={link.href.substring(1)}
+                className="py-4 text-lg uppercase tracking-wide"
+                onClick={toggleMenu}
+              >
+                {link.name}
+              </a>
+            ) : (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="py-4 text-lg uppercase tracking-wide"
+                onClick={toggleMenu}
+              >
+                {link.name}
+              </Link>
+            )
           ))}
           <a
             href="#liability"
