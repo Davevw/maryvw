@@ -52,10 +52,10 @@ const Work = () => {
       description: "Energetic and motivating group classes including yoga, HIIT, and strength training that build community while helping participants achieve their fitness goals."
     },
     {
-      title: "Nutrition Coaching",
+      title: "Meal Planning for Fitness",
       category: "Health",
       year: "2022",
-      description: "Comprehensive nutrition plans tailored to your lifestyle and fitness objectives, with ongoing support to help you make sustainable dietary changes."
+      description: "Personalized meal plans designed to complement your fitness routine, with balanced nutrition to fuel your workouts and support recovery for optimal results."
     },
     {
       title: "Online Fitness Programs",
