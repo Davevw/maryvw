@@ -58,10 +58,10 @@ const Work = () => {
       description: "Personalized meal plans designed to complement your fitness routine, with balanced nutrition to fuel your workouts and support recovery for optimal results."
     },
     {
-      title: "Online Fitness Programs",
+      title: "Zoom Classes for Remote Workouts",
       category: "Digital",
       year: "2021",
-      description: "Accessible workout programs you can follow from anywhere, complete with video tutorials, progress tracking, and virtual coaching support."
+      description: "Live virtual workout sessions you can join from anywhere, with real-time instructor feedback, community interaction, and modifications for all fitness levels."
     },
   ];
 
