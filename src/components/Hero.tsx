@@ -5,46 +5,52 @@ const Hero = () => {
   return (
     <section 
       id="home" 
-      className="h-screen flex flex-col justify-center relative px-6 md:px-12 bg-secondary/20"
-      style={{
-        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('/lovable-uploads/6df31c73-0c61-4174-b7d1-097f2c69ce00.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat"
-      }}
+      className="h-screen flex items-center relative px-6 md:px-12 bg-secondary/20"
     >
-      <div className="max-w-7xl mx-auto w-full">
-        <div className="animate-fade-in opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-medium mb-6 leading-tight text-white">
-            Mary's Fitness Channel
-          </h1>
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <div className="animate-fade-in opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-medium mb-6 leading-tight">
+              Mary's Fitness Channel
+            </h1>
+          </div>
+          
+          <div className="animate-fade-in opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
+            <h2 className="text-xl md:text-3xl font-serif font-normal mb-8 text-foreground/90 max-w-2xl">
+              Discover a World of Fitness and Health
+            </h2>
+          </div>
+          
+          <div className="animate-fade-in opacity-0" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
+            <p className="text-base md:text-lg max-w-md font-light mb-12 text-foreground/80">
+              Welcome to Mary's Fitness & Lifestyle Channel. Here, you'll find everything you need to live your best life.
+            </p>
+          </div>
+          
+          <a 
+            href="#about" 
+            className="inline-flex items-center group animate-fade-in opacity-0"
+            style={{ animationDelay: "0.8s", animationFillMode: "forwards" }}
+          >
+            <span className="text-sm uppercase tracking-widest mr-2">
+              Explore
+            </span>
+            <ArrowDown 
+              size={16} 
+              className="transition-transform duration-300 group-hover:translate-y-1" 
+            />
+          </a>
         </div>
         
-        <div className="animate-fade-in opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
-          <h2 className="text-xl md:text-3xl font-serif font-normal mb-8 text-white/90 max-w-2xl">
-            Discover a World of Fitness and Health
-          </h2>
+        <div className="hidden md:block relative h-full w-full animate-fade-in opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
+          <div className="rounded-md overflow-hidden h-[70vh] max-h-[600px] w-full">
+            <img 
+              src="/lovable-uploads/6df31c73-0c61-4174-b7d1-097f2c69ce00.png"
+              alt="Wooden bridge path"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
-        
-        <div className="animate-fade-in opacity-0" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
-          <p className="text-base md:text-lg max-w-md font-light mb-12 text-white/80">
-            Welcome to Mary's Fitness & Lifestyle Channel. Here, you'll find everything you need to live your best life.
-          </p>
-        </div>
-        
-        <a 
-          href="#about" 
-          className="inline-flex items-center group animate-fade-in opacity-0 text-white"
-          style={{ animationDelay: "0.8s", animationFillMode: "forwards" }}
-        >
-          <span className="text-sm uppercase tracking-widest mr-2">
-            Explore
-          </span>
-          <ArrowDown 
-            size={16} 
-            className="transition-transform duration-300 group-hover:translate-y-1" 
-          />
-        </a>
       </div>
       
       <div className="absolute bottom-8 left-6 md:left-12 hidden md:block">
@@ -53,7 +59,7 @@ const Hero = () => {
             href="https://instagram.com" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-xs uppercase tracking-wider link-underline text-white"
+            className="text-xs uppercase tracking-wider link-underline"
           >
             Instagram
           </a>
@@ -61,7 +67,7 @@ const Hero = () => {
             href="https://youtube.com" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-xs uppercase tracking-wider link-underline text-white"
+            className="text-xs uppercase tracking-wider link-underline"
           >
             YouTube
           </a>
@@ -69,7 +75,7 @@ const Hero = () => {
             href="https://facebook.com" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-xs uppercase tracking-wider link-underline text-white"
+            className="text-xs uppercase tracking-wider link-underline"
           >
             Facebook
           </a>
