@@ -8,8 +8,8 @@ const Hero = () => {
       className="h-screen flex flex-col justify-center relative px-6 md:px-12 bg-secondary/20"
       style={{
         backgroundImage: "url('/lovable-uploads/2afddb83-3441-45ed-ab7f-f3ba7e5234a8.png')",
-        backgroundSize: "30%",
-        backgroundPosition: "right 5% center",
+        backgroundSize: "contain",
+        backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundBlendMode: "overlay"
       }}
