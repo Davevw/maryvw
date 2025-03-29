@@ -1,9 +1,17 @@
 
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +41,6 @@ const Navbar = () => {
     { name: "About", href: "/#about" },
     { name: "Topics", href: "/#work" },
     { name: "Gallery", href: "/#gallery" },
-    { name: "Other Services", href: "/other-services" },
     { name: "Contact", href: "/#contact" },
   ];
 
@@ -49,33 +56,65 @@ const Navbar = () => {
           <Logo variant={scrolled ? "small" : "default"} />
         </Link>
 
-        {/* Desktop menu */}
-        <div className="hidden md:flex space-x-8">
-          {navLinks.map((link) => (
-            link.href.startsWith('/#') ? (
-              <a
-                key={link.name}
-                href={link.href.substring(1)}
-                className="text-sm uppercase tracking-wide link-underline"
-              >
-                {link.name}
-              </a>
-            ) : (
-              <Link
-                key={link.name}
-                to={link.href}
-                className="text-sm uppercase tracking-wide link-underline"
-              >
-                {link.name}
-              </Link>
-            )
-          ))}
-          <a
-            href="#liability"
-            className="text-sm uppercase tracking-wide text-primary"
-          >
-            Liability Waiver
-          </a>
+        {/* Desktop menu with navigation dropdown */}
+        <div className="hidden md:block">
+          <NavigationMenu>
+            <NavigationMenuList>
+              {navLinks.map((link) => (
+                link.href.startsWith('/#') ? (
+                  <NavigationMenuItem key={link.name}>
+                    <a
+                      href={link.href.substring(1)}
+                      className="text-sm uppercase tracking-wide link-underline px-4 py-2"
+                    >
+                      {link.name}
+                    </a>
+                  </NavigationMenuItem>
+                ) : (
+                  <NavigationMenuItem key={link.name}>
+                    <Link
+                      to={link.href}
+                      className="text-sm uppercase tracking-wide link-underline px-4 py-2"
+                    >
+                      {link.name}
+                    </Link>
+                  </NavigationMenuItem>
+                )
+              ))}
+              
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="text-sm uppercase tracking-wide">
+                  Services
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid w-[200px] gap-2 p-4">
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          to="/other-services"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        >
+                          <div className="text-sm font-medium">Dog Sitting</div>
+                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                            Professional dog walking and sitting services
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              
+              <NavigationMenuItem>
+                <a
+                  href="#liability"
+                  className="text-sm uppercase tracking-wide text-primary px-4 py-2"
+                >
+                  Liability Waiver
+                </a>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </div>
 
         {/* Mobile menu button */}
@@ -112,6 +151,13 @@ const Navbar = () => {
               </Link>
             )
           ))}
+          <Link
+            to="/other-services"
+            className="py-4 text-lg uppercase tracking-wide"
+            onClick={toggleMenu}
+          >
+            Dog Sitting
+          </Link>
           <a
             href="#liability"
             className="py-4 text-lg uppercase tracking-wide text-primary"
