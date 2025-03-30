@@ -11,14 +11,8 @@ const Hero = () => {
         <div>
           <div className="animate-fade-in opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-medium mb-6 leading-tight">
-              Mary's Fitness Channel
-            </h1>
-          </div>
-          
-          <div className="animate-fade-in opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
-            <h2 className="text-xl md:text-3xl font-serif font-normal mb-8 text-foreground/90 max-w-2xl">
               Discover a World of Fitness and Health
-            </h2>
+            </h1>
           </div>
           
           <div className="animate-fade-in opacity-0" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
