@@ -7,12 +7,10 @@ import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import LiabilityButton from "@/components/LiabilityButton";
-import LiabilityBanner from "@/components/LiabilityBanner";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <LiabilityBanner />
       <div className="pt-0">
         <Navbar />
         <Hero />
