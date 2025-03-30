@@ -1,12 +1,9 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
 const OtherServices = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navbar />
       <div className="py-24 md:py-32 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
@@ -33,7 +30,7 @@ const OtherServices = () => {
                 <CardContent>
                   <ul className="space-y-4">
                     <li className="flex justify-between items-center border-b pb-2">
-                      <span className="font-medium">Dog Walking (30 min)</span>
+                      <span className="font-medium">Day Walking (30 min)</span>
                       <span className="font-bold">$25</span>
                     </li>
                     <li className="flex justify-between items-center border-b pb-2">
@@ -41,8 +38,8 @@ const OtherServices = () => {
                       <span className="font-bold">$100</span>
                     </li>
                     <li className="flex justify-between items-center border-b pb-2">
-                      <span className="font-medium">Stretch and Release</span>
-                      <span className="font-bold">$50/hr</span>
+                      <span className="font-medium">Stretch and Release (30 minutes)</span>
+                      <span className="font-bold">$50</span>
                     </li>
                     <li className="flex justify-between items-center border-b pb-2">
                       <span className="font-medium">Wash and Fluff</span>
@@ -62,11 +59,7 @@ const OtherServices = () => {
             </div>
             
             <div className="relative">
-              <img 
-                src="/lovable-uploads/adf1fc98-f00a-43a4-b9e2-238a21ee40ff.png"
-                alt="Mom's Best Friend Dog Walking and Sitting"
-                className="rounded-lg shadow-lg w-full"
-              />
+              <img src="/lovable-uploads/adf1fc98-f00a-43a4-b9e2-238a21ee40ff.png" alt="Mom's Best Friend Dog Walking and Sitting" className="rounded-lg shadow-lg w-full" />
             </div>
           </div>
           
@@ -90,8 +83,6 @@ const OtherServices = () => {
         </div>
       </div>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default OtherServices;
