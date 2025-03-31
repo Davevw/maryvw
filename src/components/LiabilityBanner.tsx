@@ -7,7 +7,7 @@ const LiabilityBanner = () => {
       <div className="max-w-7xl mx-auto w-full flex justify-center items-center">
         <Button 
           variant="outline" 
-          className="bg-white/10 border-white text-white hover:bg-white/20 whitespace-nowrap font-medium"
+          className="bg-white/10 border-white text-white hover:bg-white/20 whitespace-nowrap font-medium w-full max-w-xs"
           onClick={() => window.open('https://form.jotform.com/243354759406160', '_blank')}
         >
           Liability Waiver - Click Here
