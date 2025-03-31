@@ -41,7 +41,7 @@ const OtherServices = () => {
                       <span className="font-bold">$100</span>
                     </li>
                     <li className="flex justify-between items-center border-b pb-2">
-                      <span className="font-medium">Stretch and Release (30 minutes)</span>
+                      <span className="font-medium">Stretch and Release (30 mins)</span>
                       <span className="font-bold">$50</span>
                     </li>
                     <li className="flex justify-between items-center border-b pb-2">
