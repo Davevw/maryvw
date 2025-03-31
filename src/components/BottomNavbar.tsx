@@ -27,7 +27,7 @@ const BottomNavbar = () => {
                 : pathname === item.href;
             
           return (
-            <React.Fragment key={item.name}>
+            <div key={item.name}>
               {item.href.startsWith("/#") ? (
                 <a 
                   href={item.href.substring(1)} 
@@ -51,7 +51,7 @@ const BottomNavbar = () => {
                   <span className="mt-1">{item.name}</span>
                 </Link>
               )}
-            </React.Fragment>
+            </div>
           );
         })}
       </div>
