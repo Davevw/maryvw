@@ -1,11 +1,14 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BottomNavbar from "@/components/BottomNavbar";
+
 const OtherServices = () => {
   return <div className="min-h-screen bg-background">
       <Navbar />
-      <div className="py-24 md:py-32 px-6 md:px-12">
+      <div className="py-24 md:py-32 px-6 md:px-12 pb-24 md:pb-32">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-serif mb-12">Other Services</h1>
           
@@ -83,6 +86,7 @@ const OtherServices = () => {
         </div>
       </div>
       <Footer />
+      <BottomNavbar />
     </div>;
 };
 export default OtherServices;

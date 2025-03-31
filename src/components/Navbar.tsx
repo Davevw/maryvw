@@ -1,16 +1,13 @@
 
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
+  NavigationMenuItem,
 } from "@/components/ui/navigation-menu";
 
 const Navbar = () => {
@@ -55,7 +52,7 @@ const Navbar = () => {
           <Logo variant={scrolled ? "small" : "default"} />
         </Link>
 
-        {/* Desktop menu with navigation dropdown */}
+        {/* Desktop menu */}
         <div className="hidden md:block">
           <NavigationMenu>
             <NavigationMenuList>
@@ -80,29 +77,6 @@ const Navbar = () => {
                   </NavigationMenuItem>
                 )
               ))}
-              
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-sm uppercase tracking-wide">
-                  Services
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid w-[200px] gap-2 p-4">
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link
-                          to="/other-services"
-                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                        >
-                          <div className="text-sm font-medium">Dog Sitting</div>
-                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                            Professional dog walking and sitting services
-                          </p>
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
         </div>
@@ -141,13 +115,6 @@ const Navbar = () => {
               </Link>
             )
           ))}
-          <Link
-            to="/other-services"
-            className="py-4 text-lg uppercase tracking-wide"
-            onClick={toggleMenu}
-          >
-            Dog Sitting
-          </Link>
         </div>
       )}
     </nav>

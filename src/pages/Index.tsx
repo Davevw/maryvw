@@ -1,5 +1,6 @@
 
 import Navbar from "@/components/Navbar";
+import BottomNavbar from "@/components/BottomNavbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Work from "@/components/Work";
@@ -20,6 +21,7 @@ const Index = () => {
         <Gallery />
         <Contact />
         <Footer />
+        <BottomNavbar />
       </div>
     </div>
   );
