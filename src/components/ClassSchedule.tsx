@@ -5,35 +5,35 @@ import { Calendar } from "lucide-react";
 const ClassSchedule = () => {
   const scheduleData = [
     {
-      day: "Monday",
+      day: "M",
       time: "8:00 AM",
       type: "Upper Body Strength",
       format: "Zoom",
       length: "30 mins"
     },
     {
-      day: "Tuesday",
+      day: "T",
       time: "9:00 AM",
       type: "Stretch & Breath",
       format: "Zoom + In-Person",
       length: "60 mins"
     },
     {
-      day: "Wednesday",
+      day: "W",
       time: "8:00 AM",
       type: "Combo (Balance, Core, Weights)",
       format: "Zoom",
       length: "30 mins"
     },
     {
-      day: "Thursday",
+      day: "Th",
       time: "8:00 AM",
       type: "Stretch",
       format: "Zoom",
       length: "30 mins"
     },
     {
-      day: "Friday",
+      day: "Fr",
       time: "8:00 AM",
       type: "Lower Body Strength",
       format: "Zoom",
