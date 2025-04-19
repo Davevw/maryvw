@@ -8,6 +8,7 @@ import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import LiabilityButton from "@/components/LiabilityButton";
+import ClassSchedule from "@/components/ClassSchedule";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
         <About />
         <LiabilityButton />
         <Work />
+        <ClassSchedule />
         <Gallery />
         <Contact />
         <Footer />
