@@ -7,37 +7,37 @@ const ClassSchedule = () => {
     {
       day: "Monday",
       time: "8:00 AM",
-      class: "Upper Body Strength",
-      format: "Zoom Only",
-      notes: "30-minute class"
+      type: "Upper Body Strength",
+      format: "Zoom",
+      length: "30 mins"
     },
     {
       day: "Tuesday",
       time: "9:00 AM",
-      class: "Stretch & Breath",
-      format: "In-Person (Seacliff Residents) + Zoom",
-      notes: "30-minute class"
+      type: "Stretch & Breath",
+      format: "Zoom + In-Person",
+      length: "60 mins"
     },
     {
       day: "Wednesday",
       time: "8:00 AM",
-      class: "Combo (Balance, Core, Weights)",
-      format: "Zoom Only",
-      notes: "Trainer's choice mix"
+      type: "Combo (Balance, Core, Weights)",
+      format: "Zoom",
+      length: "30 mins"
     },
     {
       day: "Thursday",
       time: "8:00 AM",
-      class: "Stretch",
-      format: "Zoom Only",
-      notes: "30-minute class"
+      type: "Stretch",
+      format: "Zoom",
+      length: "30 mins"
     },
     {
       day: "Friday",
       time: "8:00 AM",
-      class: "Lower Body Strength",
-      format: "Zoom Only",
-      notes: "30-minute class"
+      type: "Lower Body Strength",
+      format: "Zoom",
+      length: "30 mins"
     }
   ];
 
@@ -55,9 +55,9 @@ const ClassSchedule = () => {
               <TableRow>
                 <TableHead>Day</TableHead>
                 <TableHead>Time</TableHead>
-                <TableHead>Class</TableHead>
+                <TableHead>Type</TableHead>
                 <TableHead>Format</TableHead>
-                <TableHead>Notes</TableHead>
+                <TableHead>Length</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -65,9 +65,9 @@ const ClassSchedule = () => {
                 <TableRow key={index}>
                   <TableCell className="font-medium">{item.day}</TableCell>
                   <TableCell>{item.time}</TableCell>
-                  <TableCell>{item.class}</TableCell>
+                  <TableCell>{item.type}</TableCell>
                   <TableCell>{item.format}</TableCell>
-                  <TableCell>{item.notes}</TableCell>
+                  <TableCell>{item.length}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
