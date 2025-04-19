@@ -23,7 +23,7 @@ const ClassSchedule = () => {
       time: "8 AM",
       type: "Combo (Balance, Core, Weights)",
       format: "Zoom",
-      length: "30 mins"
+      length: "Trainer's choice mix"
     },
     {
       day: "Th",
