@@ -49,6 +49,10 @@ const ClassSchedule = () => {
           <h2 className="text-3xl md:text-4xl font-serif text-center">Weekly Class Schedule</h2>
         </div>
         
+        <p className="text-center mb-8 max-w-2xl mx-auto">
+          Energetic and motivating group classes including yoga balls, and strength training that build community while helping participants achieve their fitness goals.
+        </p>
+        
         <div className="overflow-x-auto">
           <Table>
             <TableHeader>
