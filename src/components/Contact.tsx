@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -64,18 +63,15 @@ const Contact = () => {
             <h3 className="text-xl font-serif mb-6">Get in Touch!</h3>
             
             <div className="mb-8">
-              <h4 className="text-sm uppercase tracking-wider mb-2">Address</h4>
               <p>Mary's Fitness and Lifestyle Channel</p>
               <p>Oceanside, California 92054, United States</p>
             </div>
             
             <div className="mb-8">
-              <h4 className="text-sm uppercase tracking-wider mb-2">Hours</h4>
               <p>Classes are on Zoom and in person. Contact us for a Link to Scheduled Classes.</p>
             </div>
             
             <div>
-              <h4 className="text-sm uppercase tracking-wider mb-2">Social</h4>
               <div className="flex space-x-6">
                 <a 
                   href="https://instagram.com" 
