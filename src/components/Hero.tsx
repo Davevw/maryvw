@@ -1,3 +1,4 @@
+
 import { ArrowDown } from "lucide-react";
 const Hero = () => {
   return <section id="home" className="h-screen flex items-center relative px-6 md:px-12 bg-secondary/20">
@@ -41,20 +42,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
-      <div className="absolute bottom-8 left-6 md:left-12 hidden md:block">
-        <div className="flex flex-col space-y-3">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-xs uppercase tracking-wider link-underline">
-            Instagram
-          </a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-xs uppercase tracking-wider link-underline">
-            YouTube
-          </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-xs uppercase tracking-wider link-underline">
-            Facebook
-          </a>
-        </div>
-      </div>
     </section>;
 };
 export default Hero;
+
