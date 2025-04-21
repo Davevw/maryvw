@@ -2,13 +2,13 @@
 import Navbar from "@/components/Navbar";
 import BottomNavbar from "@/components/BottomNavbar";
 import Hero from "@/components/Hero";
+import LiabilityButton from "@/components/LiabilityButton";
 import About from "@/components/About";
+import ClassSchedule from "@/components/ClassSchedule";
 import Work from "@/components/Work";
 import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import LiabilityButton from "@/components/LiabilityButton";
-import ClassSchedule from "@/components/ClassSchedule";
 
 const Index = () => {
   return (
@@ -16,8 +16,8 @@ const Index = () => {
       <div className="pt-0">
         <Navbar />
         <Hero />
-        <About />
         <LiabilityButton />
+        <About />
         <ClassSchedule />
         <Work />
         <Gallery />
