@@ -70,35 +70,6 @@ const Contact = () => {
             <div className="mb-8">
               <p>Classes are on Zoom and in person. Contact us for a Link to Scheduled Classes.</p>
             </div>
-            
-            <div>
-              <div className="flex space-x-6">
-                <a 
-                  href="https://instagram.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-lg link-underline"
-                >
-                  Instagram
-                </a>
-                <a 
-                  href="https://youtube.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-lg link-underline"
-                >
-                  YouTube
-                </a>
-                <a 
-                  href="https://facebook.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-lg link-underline"
-                >
-                  Facebook
-                </a>
-              </div>
-            </div>
           </div>
           
           <div>
