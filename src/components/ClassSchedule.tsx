@@ -7,7 +7,7 @@ const ClassSchedule = () => {
     {
       day: "M",
       time: "8 AM",
-      type: "Upper Body Strength",
+      type: "Yoga Ball Strength",
       format: "Zoom",
       length: "30 mins"
     },
@@ -21,9 +21,9 @@ const ClassSchedule = () => {
     {
       day: "W",
       time: "8 AM",
-      type: "Combo (Balance, Core, Weights)",
+      type: "Yoga Ball Balance",
       format: "Zoom",
-      length: "Trainer's choice mix"
+      length: "30 mins"
     },
     {
       day: "Th",
@@ -35,7 +35,7 @@ const ClassSchedule = () => {
     {
       day: "Fr",
       time: "8 AM",
-      type: "Lower Body Strength",
+      type: "Yoga Ball Core",
       format: "Zoom",
       length: "30 mins"
     }
