@@ -10,13 +10,13 @@ const About = () => {
           <div>
             <h2 className="text-3xl md:text-4xl font-serif mb-8">About Mary's Journey of Fitness and Wellness</h2>
             <div className="space-y-6">
-              <p className="text-lg">
-                Mary's professional journey in the fitness industry is as vibrant and impactful. With over two decades of experience, she has dedicated her career to transforming lives through fitness, health, and emotional well-being.
+              <p className="text-lg font-sans">
+                Customized one-on-one training sessions designed to meet your specific fitness goals, whether it's weight loss, muscle gain, or improved overall health and wellness.
               </p>
-              <p>
+              <p className="font-sans">
                 For 18 years, Mary was a cornerstone at the world-renowned <a href="https://www.cal-a-vie.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Cal-a-Vie Health Spa</a> and the <a href="https://goldendoor.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Golden Door</a>. Nestled among rolling hills, these prestigious wellness destinations provided the perfect backdrop for Mary to develop her holistic approach to fitness and wellness.
               </p>
-              <p>
+              <p className="font-sans">
                 Mary brings over two decades of experience as a fitness expert and wellness coach, sharing her passion for empowering individuals to embrace healthier, happier lives. With a holistic approach, Mary blends physical activity, emotional well-being, and lifestyle inspiration.
               </p>
               <button className="text-sm uppercase tracking-wider mt-4 link-underline">
