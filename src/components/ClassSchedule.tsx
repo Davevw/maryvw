@@ -1,4 +1,3 @@
-
 import { Table, TableHeader, TableBody, TableHead, TableRow, TableCell } from "@/components/ui/table";
 import { Calendar } from "lucide-react";
 
@@ -7,7 +6,7 @@ const ClassSchedule = () => {
     {
       day: "M",
       time: "8 AM",
-      type: "Yoga Ball Strength",
+      type: "Upper Strength",
       format: "Zoom",
       length: "30 mins"
     },
