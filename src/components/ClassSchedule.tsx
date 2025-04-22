@@ -20,7 +20,7 @@ const ClassSchedule = () => {
     {
       day: "W",
       time: "8 AM",
-      type: "Mary's Choice - Varies",
+      type: "Mary Choice",
       format: "Zoom",
       length: "30 mins"
     },
