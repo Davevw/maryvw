@@ -1,9 +1,10 @@
 
+import React from 'react';
+
 const Contact = () => {
   return (
     <section id="contact" className="py-24 md:py-32 px-6 md:px-12 bg-secondary">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-serif mb-8 text-center">Contact Me</h2>
         <div className="flex flex-col items-center">
           <iframe
             title="Contact Form"
