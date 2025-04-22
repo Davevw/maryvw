@@ -35,7 +35,7 @@ const ClassSchedule = () => {
     {
       day: "Fr",
       time: "8 AM",
-      type: "Lower Body Strength: Yoga Ball Core",
+      type: "Lower Body Strength",
       format: "Zoom",
       length: "30 mins"
     }
