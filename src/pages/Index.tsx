@@ -2,7 +2,7 @@
 import Navbar from "@/components/Navbar";
 import BottomNavbar from "@/components/BottomNavbar";
 import Hero from "@/components/Hero";
-import LiabilityButton from "@/components/LiabilityButton";
+import LiabilityWaiverCTA from "@/components/LiabilityWaiverCTA";
 import About from "@/components/About";
 import ClassSchedule from "@/components/ClassSchedule";
 import Work from "@/components/Work";
@@ -16,7 +16,7 @@ const Index = () => {
       <div className="pt-0">
         <Navbar />
         <Hero />
-        <LiabilityButton />
+        <LiabilityWaiverCTA />
         <About />
         <ClassSchedule />
         <Work />
