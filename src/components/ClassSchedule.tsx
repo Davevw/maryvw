@@ -6,7 +6,7 @@ const ClassSchedule = () => {
     {
       day: "M",
       time: "8 AM",
-      type: "Upper Strength",
+      type: "Upper Body Strength",
       format: "Zoom",
       length: "30 mins"
     },
