@@ -7,7 +7,7 @@ const Hero = () => {
       id="home" 
       className="h-screen flex items-center relative px-6 md:px-12"
       style={{
-        backgroundImage: "url('/lovable-uploads/9c223bf5-20e7-426a-81bf-6e429806d0b6.png')",
+        backgroundImage: "url('/lovable-uploads/a2b1242f-5986-48a7-94fc-11ac93ccc123.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
