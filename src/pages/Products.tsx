@@ -59,13 +59,21 @@ const Products = () => {
       <div className="pt-0">
         <Navbar />
         
-        {/* Hero Section */}
-        <section className="pt-32 pb-16 px-6 md:px-12 bg-secondary/30">
-          <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-6">
+        {/* Hero Section with Beach Yoga Background */}
+        <section 
+          className="pt-32 pb-16 px-6 md:px-12 relative"
+          style={{
+            backgroundImage: "url('/lovable-uploads/a2b1242f-5986-48a7-94fc-11ac93ccc123.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center"
+          }}
+        >
+          <div className="absolute inset-0 bg-black/30" aria-hidden="true"></div>
+          <div className="max-w-7xl mx-auto text-center relative z-10">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-6 text-white">
               Fitness and Wellness Favorites – Handpicked for You!
             </h1>
-            <p className="max-w-2xl mx-auto text-muted-foreground">
+            <p className="max-w-2xl mx-auto text-white/90">
               Browse our selection of recommended products to complement your fitness journey.
               We personally use and love these items!
             </p>
