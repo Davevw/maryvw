@@ -65,6 +65,13 @@ const Products = () => {
       description: "Comfortable dumbbells ideal for toning and strength workouts.",
       amazonLink: "https://a.co/d/e9GL7wY",
       image: "/lovable-uploads/d349cb88-0a6b-4b87-bf9f-f0c747171285.png"
+    },
+    {
+      id: 8,
+      name: "Manduka PRO Yoga Mat",
+      description: "Premium, high-density cushion for unmatched support and stability during yoga practice.",
+      amazonLink: "https://a.co/d/hcDpFos",
+      image: "https://m.media-amazon.com/images/I/615UENT0BSL._AC_SL1500_.jpg"
     }
   ];
 
