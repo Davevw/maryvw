@@ -1,4 +1,3 @@
-
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -29,7 +28,7 @@ const Products = () => {
       name: "Gaiam Essentials Thick Yoga Mat Fitness & Exercise Mat with Easy-Cinch Yoga Mat Carrier Strap, 72\"L x 24\"W x 2/5 Inch Thick",
       description: "Premium, high-density cushion for unmatched support and stability during yoga practice.",
       amazonLink: "https://a.co/d/ghLcNH4",
-      image: "https://m.media-amazon.com/images/I/41PAa6-aKdL._AC_US40_.jpg"
+      image: "/lovable-uploads/8c889473-0e89-4767-b071-75383589fe89.png"
     },
     {
       id: 9,
