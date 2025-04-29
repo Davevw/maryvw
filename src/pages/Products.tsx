@@ -28,7 +28,7 @@ const Products = () => {
       id: 8,
       name: "Manduka PRO Yoga Mat",
       description: "Premium, high-density cushion for unmatched support and stability during yoga practice.",
-      amazonLink: "https://a.co/d/hcDpFos",
+      amazonLink: "https://a.co/d/ghLcNH4",
       image: "https://m.media-amazon.com/images/I/615UENT0BSL._AC_SL1500_.jpg"
     },
     {
