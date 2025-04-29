@@ -40,7 +40,7 @@ const Products = () => {
     },
     {
       id: 10,
-      name: "Whatafit Resistance Bands Set (11pcs), Exercise Bands with Door Anchor",
+      name: "YOGA TUNE UP® Therapy Balls in Tote by Tune Up Fitness",
       description: "YOGA TUNE UP® Therapy Balls in Tote by Tune Up Fitness - Massage Balls for Trigger Point, Pressure Point & Myofascial Release",
       amazonLink: "https://a.co/d/3hlS5Xo",
       image: "https://m.media-amazon.com/images/I/71qMF3q33NL._AC_SL1500_.jpg"
