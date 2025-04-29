@@ -13,11 +13,10 @@ const Hero = () => {
         backgroundRepeat: "no-repeat"
       }}
     >
-      {/* Semi-transparent overlay to make text more readable */}
-      <div className="absolute inset-0 bg-black/20" aria-hidden="true"></div>
+      {/* Removed the overlay div completely */}
       
       <div className="max-w-7xl mx-auto w-full relative z-10">
-        <div className="max-w-xl bg-background/70 backdrop-blur-sm p-8 rounded-lg">
+        <div className="max-w-xl bg-background/80 backdrop-blur-sm p-8 rounded-lg shadow-lg">
           <div className="animate-fade-in opacity-0" style={{
             animationDelay: "0.2s",
             animationFillMode: "forwards"
