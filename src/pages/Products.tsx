@@ -1,3 +1,4 @@
+
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -34,7 +35,7 @@ const Products = () => {
       id: 9,
       name: "CAP Barbell Coated Hex Dumbbells",
       description: "Durable hex dumbbells with rubber coating for noise reduction and floor protection.",
-      amazonLink: "https://a.co/d/82aEKyR",
+      amazonLink: "https://a.co/d/hkzCBVX",
       image: "https://m.media-amazon.com/images/I/71+WRwKFJWL._AC_SL1500_.jpg"
     },
     {
