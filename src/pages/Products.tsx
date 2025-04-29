@@ -36,7 +36,7 @@ const Products = () => {
       name: "CAP Barbell Coated Hex Dumbbells",
       description: "Durable hex dumbbells with rubber coating for noise reduction and floor protection.",
       amazonLink: "https://a.co/d/hkzCBVX",
-      image: "https://m.media-amazon.com/images/I/71+WRwKFJWL._AC_SL1500_.jpg"
+      image: "/lovable-uploads/65b216f3-67c3-4812-9271-dc6939147d7e.png"
     },
     {
       id: 10,
