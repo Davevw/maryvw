@@ -20,49 +20,49 @@ const Products = () => {
       id: 1,
       name: "Gaiam Essentials Thick Yoga Mat",
       description: "Extra-thick yoga mat for comfort during stretching, yoga, and floor exercises.",
-      amazonLink: "#", // Replace with your Amazon affiliate link
+      amazonLink: "https://a.co/d/1oIiS46",
       image: "/lovable-uploads/adf1fc98-f00a-43a4-b9e2-238a21ee40ff.png"
     },
     {
       id: 2,
       name: "Hydro Flask Standard Mouth Water Bottle (21 oz)",
       description: "Stainless steel bottle to keep your drinks cold or hot for hours.",
-      amazonLink: "#", // Replace with your Amazon affiliate link
+      amazonLink: "https://a.co/d/jiYzfqA",
       image: "/lovable-uploads/4472a68c-ab53-48e5-8ce9-ca9a7181d8b9.png"
     },
     {
       id: 3,
       name: "Fit Simplify Resistance Loop Exercise Bands",
       description: "Set of 5 bands to enhance strength workouts and flexibility training.",
-      amazonLink: "#", // Replace with your Amazon affiliate link
+      amazonLink: "https://a.co/d/9A2vgtH",
       image: "/lovable-uploads/6cc29263-f605-43d0-8286-693ebbdac6e4.png"
     },
     {
       id: 4,
       name: "Bala Bangles Wearable Wrist & Ankle Weights",
       description: "Stylish, lightweight ankle/wrist weights to add resistance to everyday activities.",
-      amazonLink: "#", // Replace with your Amazon affiliate link
+      amazonLink: "https://a.co/d/8uJSYiC",
       image: "/lovable-uploads/a89307d2-1e20-4f62-a399-3579f51c505f.png"
     },
     {
       id: 5,
       name: "TriggerPoint GRID Foam Roller",
       description: "Premium foam roller to help muscles recover faster and reduce soreness.",
-      amazonLink: "#", // Replace with your Amazon affiliate link
+      amazonLink: "https://a.co/d/eVtxKkS",
       image: "/lovable-uploads/dd259007-9b43-49ba-abc0-efaadaa28c38.png"
     },
     {
       id: 6,
       name: "Polar H10 Heart Rate Monitor Chest Strap",
       description: "Highly accurate heart rate monitor, Bluetooth and ANT+ compatible.",
-      amazonLink: "#", // Replace with your Amazon affiliate link
+      amazonLink: "https://a.co/d/41qOux2",
       image: "/lovable-uploads/2afddb83-3441-45ed-ab7f-f3ba7e5234a8.png"
     },
     {
       id: 7,
       name: "Amazon Basics Neoprene Dumbbell Hand Weights (Set of 2)",
       description: "Comfortable dumbbells ideal for toning and strength workouts.",
-      amazonLink: "#", // Replace with your Amazon affiliate link
+      amazonLink: "https://a.co/d/e9GL7wY",
       image: "/lovable-uploads/adf1fc98-f00a-43a4-b9e2-238a21ee40ff.png"
     }
   ];
