@@ -18,20 +18,6 @@ interface Product {
 const Products = () => {
   const products: Product[] = [
     {
-      id: 1,
-      name: "Gaiam Essentials Thick Yoga Mat",
-      description: "Extra-thick yoga mat for comfort during stretching, yoga, and floor exercises.",
-      amazonLink: "https://a.co/d/1oIiS46",
-      image: "/lovable-uploads/adf1fc98-f00a-43a4-b9e2-238a21ee40ff.png"
-    },
-    {
-      id: 2,
-      name: "Hydro Flask Standard Mouth Water Bottle (21 oz)",
-      description: "Stainless steel bottle to keep your drinks cold or hot for hours.",
-      amazonLink: "https://a.co/d/jiYzfqA",
-      image: "/lovable-uploads/4472a68c-ab53-48e5-8ce9-ca9a7181d8b9.png"
-    },
-    {
       id: 3,
       name: "Fit Simplify Resistance Loop Exercise Bands",
       description: "Set of 5 bands to enhance strength workouts and flexibility training.",
