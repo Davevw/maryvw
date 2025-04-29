@@ -86,6 +86,13 @@ const Products = () => {
       description: "Professional-grade percussion massager to ease muscle soreness, tension, and pain for faster recovery.",
       amazonLink: "https://a.co/d/78qY5Rb",
       image: "https://m.media-amazon.com/images/I/71shm4DLAVL._AC_SL1500_.jpg"
+    },
+    {
+      id: 11,
+      name: "AmazonBasics High-Density Round Foam Roller",
+      description: "Firm foam roller for deep tissue massage, muscle recovery, and physical therapy exercises.",
+      amazonLink: "https://a.co/d/jkB53YX",
+      image: "https://m.media-amazon.com/images/I/81LmuyFwYRL._AC_SL1500_.jpg"
     }
   ];
 
