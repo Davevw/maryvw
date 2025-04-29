@@ -1,3 +1,4 @@
+
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -36,13 +37,6 @@ const Products = () => {
       description: "Durable hex dumbbells with rubber coating for noise reduction and floor protection.",
       amazonLink: "https://a.co/d/82aEKyR",
       image: "https://m.media-amazon.com/images/I/71+WRwKFJWL._AC_SL1500_.jpg"
-    },
-    {
-      id: 10,
-      name: "Theragun Prime - Quiet Massage Gun",
-      description: "Professional-grade percussion massager to ease muscle soreness, tension, and pain for faster recovery.",
-      amazonLink: "https://a.co/d/78qY5Rb",
-      image: "https://m.media-amazon.com/images/I/71shm4DLAVL._AC_SL1500_.jpg"
     },
     {
       id: 11,
