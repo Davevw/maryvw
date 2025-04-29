@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import BottomNavbar from "@/components/BottomNavbar";
 import Footer from "@/components/Footer";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 interface Product {
   id: number;
@@ -91,12 +92,14 @@ const Products = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {products.map((product) => (
                 <Card key={product.id} className="overflow-hidden h-full flex flex-col hover:shadow-lg transition-shadow duration-300">
-                  <div className="aspect-[4/3] w-full overflow-hidden bg-muted">
-                    <img 
-                      src={product.image} 
-                      alt={product.name}
-                      className="object-cover w-full h-full"
-                    />
+                  <div className="bg-muted">
+                    <AspectRatio ratio={4/3}>
+                      <img 
+                        src={product.image} 
+                        alt={product.name}
+                        className="object-contain w-full h-full"
+                      />
+                    </AspectRatio>
                   </div>
                   <CardContent className="flex-grow flex flex-col p-6">
                     <h3 className="text-xl font-serif mb-2">{product.name}</h3>
