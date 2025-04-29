@@ -1,4 +1,3 @@
-
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -58,13 +57,6 @@ const Products = () => {
       description: "Extra thick yoga mat for support and comfort during yoga, pilates, and floor workouts.",
       amazonLink: "https://a.co/d/94fiASc",
       image: "https://m.media-amazon.com/images/I/91EE0JOuUdL._AC_SL1500_.jpg"
-    },
-    {
-      id: 13,
-      name: "Amazon Basics Adjustable Barbell Dumbbell Weight Set",
-      description: "Versatile weight set for customizable strength training with adjustable dumbbells and connecting barbell.",
-      amazonLink: "https://a.co/d/1AJoPDz",
-      image: "https://m.media-amazon.com/images/I/71mYD9Do6KL._AC_SL1500_.jpg"
     }
   ];
 
