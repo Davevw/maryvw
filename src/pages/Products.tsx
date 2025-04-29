@@ -50,7 +50,7 @@ const Products = () => {
       name: "AmazonBasics High-Density Round Foam Roller",
       description: "Firm foam roller for deep tissue massage, muscle recovery, and physical therapy exercises.",
       amazonLink: "https://a.co/d/jkB53YX",
-      image: "https://m.media-amazon.com/images/I/81LmuyFwYRL._AC_SL1500_.jpg"
+      image: "/lovable-uploads/570785a7-809b-42da-974b-e320f3891e13.png"
     },
     {
       id: 12,
