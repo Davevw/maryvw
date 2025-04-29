@@ -1,4 +1,3 @@
-
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -17,34 +16,6 @@ interface Product {
 
 const Products = () => {
   const products: Product[] = [
-    {
-      id: 3,
-      name: "Fit Simplify Resistance Loop Exercise Bands",
-      description: "Set of 5 bands to enhance strength workouts and flexibility training.",
-      amazonLink: "https://a.co/d/9A2vgtH",
-      image: "/lovable-uploads/6cc29263-f605-43d0-8286-693ebbdac6e4.png"
-    },
-    {
-      id: 4,
-      name: "Bala Bangles Wearable Wrist & Ankle Weights",
-      description: "Stylish, lightweight ankle/wrist weights to add resistance to everyday activities.",
-      amazonLink: "https://a.co/d/8uJSYiC",
-      image: "/lovable-uploads/a89307d2-1e20-4f62-a399-3579f51c505f.png"
-    },
-    {
-      id: 5,
-      name: "TriggerPoint GRID Foam Roller",
-      description: "Premium foam roller to help muscles recover faster and reduce soreness.",
-      amazonLink: "https://a.co/d/eVtxKkS",
-      image: "/lovable-uploads/dd259007-9b43-49ba-abc0-efaadaa28c38.png"
-    },
-    {
-      id: 6,
-      name: "Polar H10 Heart Rate Monitor Chest Strap",
-      description: "Highly accurate heart rate monitor, Bluetooth and ANT+ compatible.",
-      amazonLink: "https://a.co/d/41qOux2",
-      image: "/lovable-uploads/2afddb83-3441-45ed-ab7f-f3ba7e5234a8.png"
-    },
     {
       id: 7,
       name: "Amazon Basics Neoprene Dumbbell Hand Weights (Set of 2)",
