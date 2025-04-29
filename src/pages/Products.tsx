@@ -64,7 +64,7 @@ const Products = () => {
       name: "Tune Up Fitness Yoga Set - Various Ball Sizes and Colors, Original, Plus, Alpha Solo, Coregeous in Black Bag",
       description: "Complete yoga therapy ball set featuring various sizes and textures for targeted myofascial release and deep tissue massage.",
       amazonLink: "https://a.co/d/gAuFGjZ",
-      image: "https://m.media-amazon.com/images/I/81Wa-yTH+ML._AC_SL1500_.jpg"
+      image: "/lovable-uploads/4059073a-82fd-42d4-8e97-c6d3fd1df244.png"
     }
   ];
 
