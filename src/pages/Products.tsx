@@ -1,3 +1,4 @@
+
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -36,6 +37,13 @@ const Products = () => {
       description: "Durable hex dumbbells with rubber coating for noise reduction and floor protection.",
       amazonLink: "https://a.co/d/82aEKyR",
       image: "https://m.media-amazon.com/images/I/71+WRwKFJWL._AC_SL1500_.jpg"
+    },
+    {
+      id: 10,
+      name: "Whatafit Resistance Bands Set (11pcs), Exercise Bands with Door Anchor",
+      description: "Versatile resistance bands for strength training, home workouts, physical therapy, and yoga.",
+      amazonLink: "https://a.co/d/3hlS5Xo",
+      image: "https://m.media-amazon.com/images/I/71qMF3q33NL._AC_SL1500_.jpg"
     },
     {
       id: 11,
