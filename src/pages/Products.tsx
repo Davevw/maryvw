@@ -57,7 +57,7 @@ const Products = () => {
       name: "Fit Simplify Resistance Loop Exercise Bands with Instruction Guide and Carry Bag, Set of 5",
       description: "Premium latex resistance bands for home workouts, physical therapy, strength training with different resistance levels.",
       amazonLink: "https://a.co/d/7y1atic",
-      image: "https://m.media-amazon.com/images/I/71FeQwNQPIL._AC_SL1500_.jpg"
+      image: "/lovable-uploads/57ff4c34-9e9e-4c27-81ca-f374ef264a0c.png"
     }
   ];
 
