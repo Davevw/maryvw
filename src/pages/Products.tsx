@@ -1,4 +1,3 @@
-
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -54,8 +53,8 @@ const Products = () => {
     },
     {
       id: 13,
-      name: "DEGOL Skipping Rope with Ball Bearings",
-      description: "Tangle-free jump rope with adjustable length and comfortable foam handles, perfect for fitness training and weight loss.",
+      name: "Fit Simplify Resistance Loop Exercise Bands with Instruction Guide and Carry Bag, Set of 5",
+      description: "Premium latex resistance bands for home workouts, physical therapy, strength training with different resistance levels.",
       amazonLink: "https://a.co/d/7y1atic",
       image: "https://m.media-amazon.com/images/I/71FeQwNQPIL._AC_SL1500_.jpg"
     }
