@@ -1,3 +1,4 @@
+
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -50,6 +51,13 @@ const Products = () => {
       description: "Firm foam roller for deep tissue massage, muscle recovery, and physical therapy exercises.",
       amazonLink: "https://a.co/d/jkB53YX",
       image: "https://m.media-amazon.com/images/I/81LmuyFwYRL._AC_SL1500_.jpg"
+    },
+    {
+      id: 12,
+      name: "Amazon Basics 1/2-Inch Extra Thick Exercise Yoga Mat",
+      description: "Extra thick yoga mat for support and comfort during yoga, pilates, and floor workouts.",
+      amazonLink: "https://a.co/d/94fiASc",
+      image: "https://m.media-amazon.com/images/I/91EE0JOuUdL._AC_SL1500_.jpg"
     }
   ];
 
