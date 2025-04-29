@@ -58,6 +58,13 @@ const Products = () => {
       description: "Premium latex resistance bands for home workouts, physical therapy, strength training with different resistance levels.",
       amazonLink: "https://a.co/d/7y1atic",
       image: "/lovable-uploads/57ff4c34-9e9e-4c27-81ca-f374ef264a0c.png"
+    },
+    {
+      id: 14,
+      name: "Tune Up Fitness Yoga Set - Various Ball Sizes and Colors, Original, Plus, Alpha Solo, Coregeous in Black Bag",
+      description: "Complete yoga therapy ball set featuring various sizes and textures for targeted myofascial release and deep tissue massage.",
+      amazonLink: "https://a.co/d/gAuFGjZ",
+      image: "https://m.media-amazon.com/images/I/81Wa-yTH+ML._AC_SL1500_.jpg"
     }
   ];
 
