@@ -43,7 +43,7 @@ const Products = () => {
       name: "YOGA TUNE UP® Therapy Balls in Tote by Tune Up Fitness",
       description: "YOGA TUNE UP® Therapy Balls in Tote by Tune Up Fitness - Massage Balls for Trigger Point, Pressure Point & Myofascial Release",
       amazonLink: "https://a.co/d/3hlS5Xo",
-      image: "https://m.media-amazon.com/images/I/71qMF3q33NL._AC_SL1500_.jpg"
+      image: "/lovable-uploads/51b12711-3b8b-4649-81c0-1b052b6b8132.png"
     },
     {
       id: 11,
