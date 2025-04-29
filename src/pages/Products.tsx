@@ -58,6 +58,13 @@ const Products = () => {
       description: "Extra thick yoga mat for support and comfort during yoga, pilates, and floor workouts.",
       amazonLink: "https://a.co/d/94fiASc",
       image: "https://m.media-amazon.com/images/I/91EE0JOuUdL._AC_SL1500_.jpg"
+    },
+    {
+      id: 13,
+      name: "DEGOL Skipping Rope with Ball Bearings",
+      description: "Tangle-free jump rope with adjustable length and comfortable foam handles, perfect for fitness training and weight loss.",
+      amazonLink: "https://a.co/d/7y1atic",
+      image: "https://m.media-amazon.com/images/I/71FeQwNQPIL._AC_SL1500_.jpg"
     }
   ];
 
@@ -138,3 +145,4 @@ const Products = () => {
 };
 
 export default Products;
+
