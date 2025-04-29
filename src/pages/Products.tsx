@@ -63,7 +63,7 @@ const Products = () => {
       name: "Amazon Basics Neoprene Dumbbell Hand Weights (Set of 2)",
       description: "Comfortable dumbbells ideal for toning and strength workouts.",
       amazonLink: "https://a.co/d/e9GL7wY",
-      image: "/lovable-uploads/adf1fc98-f00a-43a4-b9e2-238a21ee40ff.png"
+      image: "/lovable-uploads/699d0632-2601-4e3a-be1c-e09f2daf2bdc.png"
     }
   ];
 
