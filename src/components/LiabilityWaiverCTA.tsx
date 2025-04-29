@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const jotformUrl = "https://form.jotform.com/243354759406160";
 
 const LiabilityWaiverCTA = () => (
-  <div className="w-full flex justify-center py-8 bg-secondary/40">
+  <div className="w-full flex flex-col items-center py-8 bg-secondary/40">
     <Button
       asChild
       size="lg"
@@ -16,6 +16,9 @@ const LiabilityWaiverCTA = () => (
         <ExternalLink size={18} className="ml-1" />
       </a>
     </Button>
+    <p className="mt-4 text-sm text-muted-foreground italic">
+      (If you are new to our classes, please complete the above Liability Waiver before your first class. Thank you.)
+    </p>
   </div>
 );
 
