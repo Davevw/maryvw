@@ -1,3 +1,4 @@
+
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -60,7 +61,14 @@ const Products = () => {
       amazonLink: "https://a.co/d/jkB53YX",
       image: "/lovable-uploads/570785a7-809b-42da-974b-e320f3891e13.png"
     },
-    // Third row with regular items
+    // Third row with Concept2 rower (moved up from fourth row) and regular items
+    {
+      id: 15,
+      name: "Concept2 Model D Indoor Rowing Machine",
+      description: "",
+      amazonLink: "https://amzn.to/4cSdXdm",
+      image: "/lovable-uploads/bc2b43c2-ede6-4c67-9861-fde94c62eec0.png"
+    },
     {
       id: 12,
       name: "Basics Vinyl Kettlebell",
@@ -75,20 +83,13 @@ const Products = () => {
       amazonLink: "https://a.co/d/7y1atic",
       image: "/lovable-uploads/57ff4c34-9e9e-4c27-81ca-f374ef264a0c.png"
     },
+    // Fourth row with regular items
     {
       id: 14,
       name: "Tune Up Fitness Yoga Set - Various Ball Sizes and Colors, Original, Plus, Alpha Solo, Coregeous in Black Bag",
       description: "",
       amazonLink: "https://a.co/d/gAuFGjZ",
       image: "/lovable-uploads/4059073a-82fd-42d4-8e97-c6d3fd1df244.png"
-    },
-    // Fourth row with Concept2 rower (expensive item)
-    {
-      id: 15,
-      name: "Concept2 Model D Indoor Rowing Machine",
-      description: "",
-      amazonLink: "https://amzn.to/4cSdXdm",
-      image: "/lovable-uploads/bc2b43c2-ede6-4c67-9861-fde94c62eec0.png"
     },
     // Last item - Peloton Tread at the end
     {
