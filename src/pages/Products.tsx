@@ -20,35 +20,35 @@ const Products = () => {
     {
       id: 7,
       name: "Basics Neoprene Dumbbell Hand Weights",
-      description: "Basics Neoprene Dumbbell Hand Weights",
+      description: "",
       amazonLink: "https://amzn.to/3EL8pVs",
       image: "/lovable-uploads/d349cb88-0a6b-4b87-bf9f-f0c747171285.png"
     },
     {
       id: 8,
       name: "Gaiam Essentials Thick Yoga Mat Fitness & Exercise Mat with Easy-Cinch Yoga Mat Carrier Strap, 72\"L x 24\"W x 2/5 Inch Thick",
-      description: "Premium, high-density cushion for unmatched support and stability during yoga practice.",
+      description: "",
       amazonLink: "https://amzn.to/3SkiJXv",
       image: "/lovable-uploads/8c889473-0e89-4767-b071-75383589fe89.png"
     },
     {
       id: 9,
       name: "CAP Barbell Coated Hex Dumbbells",
-      description: "Durable hex dumbbells with rubber coating for noise reduction and floor protection.",
+      description: "",
       amazonLink: "https://a.co/d/hkzCBVX",
       image: "/lovable-uploads/65b216f3-67c3-4812-9271-dc6939147d7e.png"
     },
     {
       id: 10,
       name: "YOGA TUNE UP® Therapy Balls in Tote by Tune Up Fitness",
-      description: "YOGA TUNE UP® Therapy Balls in Tote by Tune Up Fitness - Massage Balls for Trigger Point, Pressure Point & Myofascial Release",
+      description: "",
       amazonLink: "https://a.co/d/3hlS5Xo",
       image: "/lovable-uploads/51b12711-3b8b-4649-81c0-1b052b6b8132.png"
     },
     {
       id: 11,
       name: "Basics High-Density Round Foam Roller",
-      description: "Firm foam roller for deep tissue massage, muscle recovery, and physical therapy exercises.",
+      description: "",
       amazonLink: "https://a.co/d/jkB53YX",
       image: "/lovable-uploads/570785a7-809b-42da-974b-e320f3891e13.png"
     },
@@ -62,21 +62,21 @@ const Products = () => {
     {
       id: 13,
       name: "Fit Simplify Resistance Loop Exercise Bands with Instruction Guide and Carry Bag, Set of 5",
-      description: "Premium latex resistance bands for home workouts, physical therapy, strength training with different resistance levels.",
+      description: "",
       amazonLink: "https://a.co/d/7y1atic",
       image: "/lovable-uploads/57ff4c34-9e9e-4c27-81ca-f374ef264a0c.png"
     },
     {
       id: 14,
       name: "Tune Up Fitness Yoga Set - Various Ball Sizes and Colors, Original, Plus, Alpha Solo, Coregeous in Black Bag",
-      description: "Complete yoga therapy ball set featuring various sizes and textures for targeted myofascial release and deep tissue massage.",
+      description: "",
       amazonLink: "https://a.co/d/gAuFGjZ",
       image: "/lovable-uploads/4059073a-82fd-42d4-8e97-c6d3fd1df244.png"
     },
     {
       id: 15,
       name: "Concept2 Model D Indoor Rowing Machine",
-      description: "Premium rowing machine with air-resistance system for full-body workouts and cardio training.",
+      description: "",
       amazonLink: "https://amzn.to/4cSdXdm",
       image: "/lovable-uploads/bc2b43c2-ede6-4c67-9861-fde94c62eec0.png"
     }
@@ -124,12 +124,11 @@ const Products = () => {
                     </AspectRatio>
                   </div>
                   <CardContent className="flex-grow flex flex-col p-6">
-                    <h3 className="text-xl font-serif mb-2">{product.name}</h3>
-                    <p className="text-muted-foreground mb-6 flex-grow">{product.description}</p>
+                    <h3 className="text-xl font-serif mb-6">{product.name}</h3>
                     <Button 
                       asChild 
                       variant="default" 
-                      className="w-full" 
+                      className="w-full mt-auto" 
                     >
                       <a href={product.amazonLink} target="_blank" rel="noopener noreferrer">
                         <ShoppingCart className="mr-2" size={18} />
@@ -159,4 +158,3 @@ const Products = () => {
 };
 
 export default Products;
-
