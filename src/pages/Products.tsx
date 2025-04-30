@@ -19,9 +19,9 @@ const Products = () => {
   const products: Product[] = [
     {
       id: 7,
-      name: "Amazon Basics Neoprene Dumbbell Hand Weights (Set of 2)",
-      description: "Amazon Basics Neoprene Dumbbell Hand Weights",
-      amazonLink: "https://amzn.to/3EM2DCY",
+      name: "Basics Neoprene Dumbbell Hand Weights",
+      description: "Basics Neoprene Dumbbell Hand Weights",
+      amazonLink: "https://amzn.to/3EL8pVs",
       image: "/lovable-uploads/d349cb88-0a6b-4b87-bf9f-f0c747171285.png"
     },
     {
