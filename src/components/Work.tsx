@@ -1,4 +1,4 @@
-
+import React from "react";
 import { ArrowRight } from "lucide-react";
 
 interface WorkItemProps {
@@ -21,15 +21,6 @@ const WorkItem = ({ title, category, description, index }: WorkItemProps) => {
         <p className="text-base text-muted-foreground max-w-xl mb-4">
           {description}
         </p>
-        <div className="inline-flex items-center">
-          <span className="text-sm uppercase tracking-wider mr-2">
-            View program
-          </span>
-          <ArrowRight 
-            size={16} 
-            className="transition-transform duration-300 group-hover:translate-x-1" 
-          />
-        </div>
       </div>
       <div className="h-px w-full bg-border group-hover:bg-primary/30 transition-colors"></div>
     </div>
