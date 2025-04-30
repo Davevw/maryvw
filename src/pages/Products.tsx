@@ -135,7 +135,7 @@ const Products = () => {
           </div>
         </section>
         
-        {/* Shopping Banner with Amazon Link - Updated to green text */}
+        {/* Shopping Banner with Amazon Link - Updated text */}
         <div className="bg-sky-50 py-4 border-y border-sky-100">
           <div className="max-w-7xl mx-auto text-center px-6">
             <a 
@@ -144,7 +144,7 @@ const Products = () => {
               rel="noopener noreferrer"
               className="inline-block text-xl font-serif text-green-600 hover:underline transition-all"
             >
-              Shop for any items on Amazon & Support Mary's Fitness Channel!
+              Shop for these or any items on Amazon & Support Mary's Fitness Channel!
             </a>
           </div>
         </div>
