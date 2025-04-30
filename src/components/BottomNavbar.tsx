@@ -11,7 +11,7 @@ const BottomNavbar = () => {
     { name: "Home", icon: Home, href: "/" },
     { name: "About", icon: Info, href: "/#about" },
     { name: "Topics", icon: Briefcase, href: "/#work" },
-    { name: "Products", icon: ShoppingCart, href: "/products" },
+    { name: "Product Store", icon: ShoppingCart, href: "/products" },
     { name: "Contact", icon: Phone, href: "/#contact" }
   ];
 
