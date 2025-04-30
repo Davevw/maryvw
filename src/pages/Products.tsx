@@ -48,6 +48,14 @@ const Products = () => {
       amazonLink: "https://a.co/d/3hlS5Xo",
       image: "/lovable-uploads/51b12711-3b8b-4649-81c0-1b052b6b8132.png"
     },
+    // New Lululemon product
+    {
+      id: 18,
+      name: "LULULEMON Align Hi-Rise Pant 28\" Diamond Dye Graphite Grey",
+      description: "",
+      amazonLink: "https://amzn.to/44MnYqq",
+      image: "/lovable-uploads/248eff3f-1435-4860-9324-4d007412ffaf.png"
+    },
     {
       id: 16,
       name: "Peloton Indoor Exercise Bikes, Original Peloton with Interactive Screen for instructors and sessions",
