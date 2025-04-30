@@ -18,13 +18,6 @@ interface Product {
 const Products = () => {
   const products: Product[] = [
     {
-      id: 16,
-      name: "Peloton Indoor Exercise Bikes, Original Peloton with Interactive Screen for instructors and sessions",
-      description: "",
-      amazonLink: "https://amzn.to/4cSdXdm",
-      image: "/lovable-uploads/e38b88e3-dd4c-4fde-ae51-6d956dcdad34.png"
-    },
-    {
       id: 7,
       name: "Basics Neoprene Dumbbell Hand Weights",
       description: "",
@@ -86,6 +79,13 @@ const Products = () => {
       description: "",
       amazonLink: "https://amzn.to/4cSdXdm",
       image: "/lovable-uploads/bc2b43c2-ede6-4c67-9861-fde94c62eec0.png"
+    },
+    {
+      id: 16,
+      name: "Peloton Indoor Exercise Bikes, Original Peloton with Interactive Screen for instructors and sessions",
+      description: "",
+      amazonLink: "https://amzn.to/4cSdXdm",
+      image: "/lovable-uploads/e38b88e3-dd4c-4fde-ae51-6d956dcdad34.png"
     }
   ];
 
