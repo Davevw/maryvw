@@ -1,3 +1,4 @@
+
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -127,14 +128,14 @@ const Products = () => {
           </div>
         </section>
         
-        {/* Shopping Banner with Amazon Link - Updated to even lighter shade */}
+        {/* Shopping Banner with Amazon Link - Updated to green text */}
         <div className="bg-sky-50 py-4 border-y border-sky-100">
           <div className="max-w-7xl mx-auto text-center px-6">
             <a 
               href="https://amzn.to/4jyWrxp" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block text-xl font-serif text-sky-800 hover:underline transition-all"
+              className="inline-block text-xl font-serif text-green-600 hover:underline transition-all"
             >
               Shop for any items on Amazon & Support Mary's Fitness Channel!
             </a>
