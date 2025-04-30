@@ -45,7 +45,7 @@ const Footer = () => {
       </div>
       
       <div id="liability" className="mt-12 pt-12 border-t border-border max-w-7xl mx-auto">
-        <h3 className="text-xl font-serif mb-4">Liability Waiver</h3>
+        <h3 className="text-xl font-serif mb-4">Liability Notice</h3>
         <p className="text-sm text-muted-foreground mb-6">
           By participating in any fitness program or using any fitness-related information provided by Mary's Fitness Channel, you acknowledge that there are risks associated with all physical activity. You should consult with your physician before beginning any exercise program. Mary's Fitness Channel is not responsible for any injuries or health problems you may experience or develop while participating in any exercise program.
         </p>
