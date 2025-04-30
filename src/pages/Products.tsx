@@ -122,7 +122,7 @@ const Products = () => {
             </h1>
             <p className="max-w-2xl mx-auto text-white/90">
               Browse our selection of recommended products to complement your fitness journey.
-              We personally use and love these items!
+              We personally use and love each of these items in our personal workouts!
             </p>
           </div>
         </section>
