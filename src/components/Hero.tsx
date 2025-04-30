@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section 
       id="home" 
-      className="h-screen flex items-center relative px-6 md:px-12"
+      className="h-screen flex items-center justify-between relative px-6 md:px-12"
       style={{
         backgroundImage: "url('/lovable-uploads/a2b1242f-5986-48a7-94fc-11ac93ccc123.png')",
         backgroundSize: "cover",
@@ -13,9 +13,7 @@ const Hero = () => {
         backgroundRepeat: "no-repeat"
       }}
     >
-      {/* Removed the overlay div completely */}
-      
-      <div className="max-w-7xl mx-auto w-full relative z-10">
+      <div className="max-w-7xl mx-auto w-full relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="max-w-xl bg-background/80 backdrop-blur-sm p-8 rounded-lg shadow-lg">
           <div className="animate-fade-in opacity-0" style={{
             animationDelay: "0.2s",
@@ -44,6 +42,17 @@ const Hero = () => {
             </span>
             <ArrowDown size={16} className="transition-transform duration-300 group-hover:translate-y-1" />
           </a>
+        </div>
+        
+        <div className="animate-fade-in opacity-0 md:max-w-md" style={{
+          animationDelay: "0.4s",
+          animationFillMode: "forwards"
+        }}>
+          <img 
+            src="/lovable-uploads/8681557d-6739-444a-821a-7c69c65f465d.png" 
+            alt="Mary in a yoga pose at the beach" 
+            className="rounded-lg shadow-xl max-w-full h-auto max-h-[500px] object-contain"
+          />
         </div>
       </div>
     </section>
