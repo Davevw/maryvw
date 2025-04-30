@@ -15,7 +15,7 @@ const ClassSchedule = () => {
       day: "T",
       time: "9 AM",
       type: "Stretch & Breath",
-      format: "Zoom + (Sea Cliff residents in person community room)",
+      format: "Zoom + (Sea Cliff residents)",
       length: "60 mins"
     },
     {
