@@ -1,4 +1,3 @@
-
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -40,6 +39,14 @@ const Products = () => {
       amazonLink: "https://a.co/d/hkzCBVX",
       image: "/lovable-uploads/65b216f3-67c3-4812-9271-dc6939147d7e.png"
     },
+    // New Lululemon product - moved right after CAP Barbell Coated Hex Dumbbells
+    {
+      id: 18,
+      name: "LULULEMON Align Hi-Rise Pant 28\" Diamond Dye Graphite Grey",
+      description: "",
+      amazonLink: "https://amzn.to/44MnYqq",
+      image: "/lovable-uploads/248eff3f-1435-4860-9324-4d007412ffaf.png"
+    },
     // Second row - mix in Peloton bike (expensive item)
     {
       id: 10,
@@ -47,14 +54,6 @@ const Products = () => {
       description: "",
       amazonLink: "https://a.co/d/3hlS5Xo",
       image: "/lovable-uploads/51b12711-3b8b-4649-81c0-1b052b6b8132.png"
-    },
-    // New Lululemon product
-    {
-      id: 18,
-      name: "LULULEMON Align Hi-Rise Pant 28\" Diamond Dye Graphite Grey",
-      description: "",
-      amazonLink: "https://amzn.to/44MnYqq",
-      image: "/lovable-uploads/248eff3f-1435-4860-9324-4d007412ffaf.png"
     },
     {
       id: 16,
