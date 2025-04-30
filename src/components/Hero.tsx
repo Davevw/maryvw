@@ -49,8 +49,8 @@ const Hero = () => {
           animationFillMode: "forwards"
         }}>
           <img 
-            src="/lovable-uploads/8681557d-6739-444a-821a-7c69c65f465d.png" 
-            alt="Mary in a yoga pose at the beach" 
+            src="/lovable-uploads/404bbbdb-da86-404b-a17c-a2d69428f013.png" 
+            alt="Mary in a meditation pose at the beach" 
             className="rounded-lg shadow-xl max-w-full h-auto max-h-[500px] object-contain"
           />
         </div>
