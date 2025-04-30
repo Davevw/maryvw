@@ -118,7 +118,7 @@ const Products = () => {
           <div className="absolute inset-0 bg-black/30" aria-hidden="true"></div>
           <div className="max-w-7xl mx-auto text-center relative z-10">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-6 text-white">
-              Fitness and Wellness Favorites – Handpicked for You!
+              Fitness and Wellness Favorites
             </h1>
             <p className="max-w-2xl mx-auto text-white/90">
               Browse our selection of recommended products to complement your fitness journey.
