@@ -128,12 +128,17 @@ const Products = () => {
           </div>
         </section>
         
-        {/* Shopping Banner */}
+        {/* Shopping Banner with Amazon Link */}
         <div className="bg-primary/10 py-4 border-y border-primary/20">
           <div className="max-w-7xl mx-auto text-center px-6">
-            <h2 className="text-xl font-serif text-primary">
+            <a 
+              href="https://amzn.to/4jyWrxp" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block text-xl font-serif text-primary hover:underline transition-all"
+            >
               Shop Amazon & Support Mary's Fitness Channel!
-            </h2>
+            </a>
           </div>
         </div>
         
