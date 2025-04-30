@@ -128,14 +128,14 @@ const Products = () => {
           </div>
         </section>
         
-        {/* Shopping Banner with Amazon Link - Updated to lighter blue */}
-        <div className="bg-sky-500 py-4 border-y border-sky-600">
+        {/* Shopping Banner with Amazon Link - Updated to lighter shade */}
+        <div className="bg-sky-100 py-4 border-y border-sky-200">
           <div className="max-w-7xl mx-auto text-center px-6">
             <a 
               href="https://amzn.to/4jyWrxp" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block text-xl font-serif text-white hover:underline transition-all"
+              className="inline-block text-xl font-serif text-sky-800 hover:underline transition-all"
             >
               Shop for any items on Amazon & Support Mary's Fitness Channel!
             </a>
