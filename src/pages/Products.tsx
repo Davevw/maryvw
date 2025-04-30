@@ -21,7 +21,7 @@ const Products = () => {
       id: 7,
       name: "Amazon Basics Neoprene Dumbbell Hand Weights (Set of 2)",
       description: "Amazon Basics Neoprene Dumbbell Hand Weights",
-      amazonLink: "https://a.co/d/9GLYvNk",
+      amazonLink: "https://amzn.to/3EM2DCY",
       image: "/lovable-uploads/d349cb88-0a6b-4b87-bf9f-f0c747171285.png"
     },
     {
