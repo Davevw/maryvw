@@ -92,7 +92,7 @@ const Products = () => {
       name: "Peloton Tread | Treadmill for Running, Walking, and Hiking with Manual or Auto-Incline Options and Immersive 24\" HD Touchscreen",
       description: "",
       amazonLink: "https://amzn.to/438E8sY",
-      image: "/lovable-uploads/2a5bba63-8751-4b38-a9e8-df99db58be4d.png"
+      image: "/lovable-uploads/b1498311-c3be-4f82-aa6b-4f907f475446.png"
     }
   ];
 
