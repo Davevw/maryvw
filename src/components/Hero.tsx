@@ -38,7 +38,7 @@ const Hero = () => {
             animationFillMode: "forwards"
           }}>
             <span className="text-sm uppercase tracking-widest mr-2">
-              Explore
+              Read More
             </span>
             <ArrowDown size={16} className="transition-transform duration-300 group-hover:translate-y-1" />
           </a>
