@@ -17,7 +17,7 @@ const LiabilityWaiverCTA = () => (
       </a>
     </Button>
     <p className="mt-4 text-sm text-muted-foreground italic">
-      (If you are new to our classes, please complete the above Liability Waiver before your first class. Thank you.)
+      (If you are new please complete the above Liability Waiver before your first class.)
     </p>
   </div>
 );
