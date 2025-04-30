@@ -47,14 +47,14 @@ const Products = () => {
     },
     {
       id: 11,
-      name: "AmazonBasics High-Density Round Foam Roller",
+      name: "Basics High-Density Round Foam Roller",
       description: "Firm foam roller for deep tissue massage, muscle recovery, and physical therapy exercises.",
       amazonLink: "https://a.co/d/jkB53YX",
       image: "/lovable-uploads/570785a7-809b-42da-974b-e320f3891e13.png"
     },
     {
       id: 12,
-      name: "Amazon Basics Vinyl Kettlebell",
+      name: "Basics Vinyl Kettlebell",
       description: "",
       amazonLink: "https://amzn.to/42BvPG1",
       image: "/lovable-uploads/29ab1bf7-086a-403d-9ff5-4beaf1ff6d92.png"
@@ -159,3 +159,4 @@ const Products = () => {
 };
 
 export default Products;
+
