@@ -1,3 +1,4 @@
+
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -127,8 +128,8 @@ const Products = () => {
           </div>
         </section>
         
-        {/* Shopping Banner with Amazon Link - Updated to blue */}
-        <div className="bg-blue-600 py-4 border-y border-blue-700">
+        {/* Shopping Banner with Amazon Link - Updated to lighter blue */}
+        <div className="bg-sky-500 py-4 border-y border-sky-600">
           <div className="max-w-7xl mx-auto text-center px-6">
             <a 
               href="https://amzn.to/4jyWrxp" 
