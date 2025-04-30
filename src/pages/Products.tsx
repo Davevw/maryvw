@@ -72,6 +72,13 @@ const Products = () => {
       description: "Complete yoga therapy ball set featuring various sizes and textures for targeted myofascial release and deep tissue massage.",
       amazonLink: "https://a.co/d/gAuFGjZ",
       image: "/lovable-uploads/4059073a-82fd-42d4-8e97-c6d3fd1df244.png"
+    },
+    {
+      id: 15,
+      name: "Concept2 Model D Indoor Rowing Machine",
+      description: "Premium rowing machine with air-resistance system for full-body workouts and cardio training.",
+      amazonLink: "https://amzn.to/4cSdXdm",
+      image: "/lovable-uploads/bc2b43c2-ede6-4c67-9861-fde94c62eec0.png"
     }
   ];
 
