@@ -1,3 +1,4 @@
+
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -53,8 +54,8 @@ const Products = () => {
     },
     {
       id: 12,
-      name: "ProSource Puzzle Exercise Mat",
-      description: "Interlocking foam tiles for home gym flooring and equipment protection.",
+      name: "Amazon Basics Vinyl Kettlebell",
+      description: "",
       amazonLink: "https://amzn.to/42BvPG1",
       image: "/lovable-uploads/570785a7-809b-42da-974b-e320f3891e13.png"
     },
