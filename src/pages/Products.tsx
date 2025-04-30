@@ -1,4 +1,3 @@
-
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -50,6 +49,13 @@ const Products = () => {
       name: "AmazonBasics High-Density Round Foam Roller",
       description: "Firm foam roller for deep tissue massage, muscle recovery, and physical therapy exercises.",
       amazonLink: "https://a.co/d/jkB53YX",
+      image: "/lovable-uploads/570785a7-809b-42da-974b-e320f3891e13.png"
+    },
+    {
+      id: 12,
+      name: "ProSource Puzzle Exercise Mat",
+      description: "Interlocking foam tiles for home gym flooring and equipment protection.",
+      amazonLink: "https://amzn.to/42BvPG1",
       image: "/lovable-uploads/570785a7-809b-42da-974b-e320f3891e13.png"
     },
     {
