@@ -1,4 +1,3 @@
-
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -17,6 +16,7 @@ interface Product {
 
 const Products = () => {
   const products: Product[] = [
+    // First row - keep smaller items
     {
       id: 7,
       name: "Basics Neoprene Dumbbell Hand Weights",
@@ -38,6 +38,7 @@ const Products = () => {
       amazonLink: "https://a.co/d/hkzCBVX",
       image: "/lovable-uploads/65b216f3-67c3-4812-9271-dc6939147d7e.png"
     },
+    // Second row - mix in Peloton bike (expensive item)
     {
       id: 10,
       name: "YOGA TUNE UP® Therapy Balls in Tote by Tune Up Fitness",
@@ -46,12 +47,20 @@ const Products = () => {
       image: "/lovable-uploads/51b12711-3b8b-4649-81c0-1b052b6b8132.png"
     },
     {
+      id: 16,
+      name: "Peloton Indoor Exercise Bikes, Original Peloton with Interactive Screen for instructors and sessions",
+      description: "",
+      amazonLink: "https://amzn.to/4cSdXdm",
+      image: "/lovable-uploads/e38b88e3-dd4c-4fde-ae51-6d956dcdad34.png"
+    },
+    {
       id: 11,
       name: "Basics High-Density Round Foam Roller",
       description: "",
       amazonLink: "https://a.co/d/jkB53YX",
       image: "/lovable-uploads/570785a7-809b-42da-974b-e320f3891e13.png"
     },
+    // Third row with regular items
     {
       id: 12,
       name: "Basics Vinyl Kettlebell",
@@ -73,6 +82,7 @@ const Products = () => {
       amazonLink: "https://a.co/d/gAuFGjZ",
       image: "/lovable-uploads/4059073a-82fd-42d4-8e97-c6d3fd1df244.png"
     },
+    // Fourth row with Concept2 rower (expensive item)
     {
       id: 15,
       name: "Concept2 Model D Indoor Rowing Machine",
@@ -80,13 +90,7 @@ const Products = () => {
       amazonLink: "https://amzn.to/4cSdXdm",
       image: "/lovable-uploads/bc2b43c2-ede6-4c67-9861-fde94c62eec0.png"
     },
-    {
-      id: 16,
-      name: "Peloton Indoor Exercise Bikes, Original Peloton with Interactive Screen for instructors and sessions",
-      description: "",
-      amazonLink: "https://amzn.to/4cSdXdm",
-      image: "/lovable-uploads/e38b88e3-dd4c-4fde-ae51-6d956dcdad34.png"
-    },
+    // Last item - Peloton Tread at the end
     {
       id: 17,
       name: "Peloton Tread | Treadmill for Running, Walking, and Hiking with Manual or Auto-Incline Options and Immersive 24\" HD Touchscreen",
