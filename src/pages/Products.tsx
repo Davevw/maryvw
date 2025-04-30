@@ -1,3 +1,4 @@
+
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -6,6 +7,7 @@ import BottomNavbar from "@/components/BottomNavbar";
 import Footer from "@/components/Footer";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface Product {
   id: number;
@@ -16,6 +18,7 @@ interface Product {
 }
 
 const Products = () => {
+  const isMobile = useIsMobile();
   const products: Product[] = [
     // First row - keep smaller items
     {
@@ -127,16 +130,19 @@ const Products = () => {
           </div>
         </section>
         
-        {/* Shopping Banner with Amazon Link - Converted to button */}
+        {/* Shopping Banner with Amazon Link - Modified for better mobile wrapping */}
         <div className="bg-sky-50 py-4 border-y border-sky-100">
           <div className="max-w-7xl mx-auto text-center px-6">
             <Button 
               variant="ghost" 
-              className="bg-transparent text-green-600 hover:bg-green-50 hover:text-green-700 text-xl font-serif"
+              className="bg-transparent text-green-600 hover:bg-green-50 hover:text-green-700 text-base md:text-xl font-serif"
               onClick={() => window.open("https://amzn.to/4jyWrxp", "_blank")}
             >
-              <ShoppingCart className="mr-2" size={20} />
-              Shop for these or any items on Amazon & Support Mary's Fitness Channel!
+              <ShoppingCart className="mr-2 flex-shrink-0" size={20} />
+              <span className="inline-block leading-tight">
+                Shop for these or any items on Amazon<br className="md:hidden" /> 
+                &amp; Support Mary's Fitness Channel!
+              </span>
             </Button>
           </div>
         </div>
