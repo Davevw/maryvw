@@ -10,7 +10,7 @@ const BottomNavbar = () => {
   const navItems = [
     { name: "Home", icon: Home, href: "/" },
     { name: "About", icon: Info, href: "/#about" },
-    { name: "Topics", icon: Briefcase, href: "/#work" },
+    { name: "Programs", icon: Briefcase, href: "/#work" },
     { name: "Product Store", icon: ShoppingCart, href: "/products" },
     { name: "Contact", icon: Phone, href: "/#contact" }
   ];
