@@ -37,17 +37,6 @@ const Hero = () => {
             <ArrowDown size={16} className="transition-transform duration-300 group-hover:translate-y-1" />
           </a>
         </div>
-        
-        <div className="flex flex-col items-center animate-fade-in opacity-0 md:max-w-md" style={{
-          animationDelay: "0.4s",
-          animationFillMode: "forwards"
-        }}>
-          <img 
-            src="/lovable-uploads/f7de588b-9a90-4d52-8160-29552d535d5b.png" 
-            alt="Wooden bridge over a stream surrounded by greenery" 
-            className="rounded-2xl soft-shadow max-w-full h-auto max-h-[500px] object-contain bg-white/20 backdrop-blur-sm p-2"
-          />
-        </div>
       </div>
     </section>
   );
