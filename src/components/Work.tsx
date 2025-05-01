@@ -1,4 +1,3 @@
-
 import React from "react";
 import { ArrowRight } from "lucide-react";
 
@@ -22,11 +21,6 @@ const WorkItem = ({ title, category, description, index }: WorkItemProps) => {
         <p className="text-base text-muted-foreground max-w-xl mb-4">
           {description}
         </p>
-      </div>
-      <div className="flex justify-end">
-        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-          <ArrowRight size={20} className="text-primary transform group-hover:translate-x-1 transition-transform" />
-        </div>
       </div>
     </div>
   );
