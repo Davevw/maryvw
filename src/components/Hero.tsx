@@ -7,7 +7,7 @@ const Hero = () => {
       id="home" 
       className="h-screen flex items-center justify-between relative px-6 md:px-12"
       style={{
-        backgroundImage: "url('/lovable-uploads/a2b1242f-5986-48a7-94fc-11ac93ccc123.png')",
+        backgroundImage: "url('/lovable-uploads/f7de588b-9a90-4d52-8160-29552d535d5b.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
@@ -44,15 +44,16 @@ const Hero = () => {
           </a>
         </div>
         
-        <div className="animate-fade-in opacity-0 md:max-w-md" style={{
+        <div className="flex flex-col items-center animate-fade-in opacity-0 md:max-w-md" style={{
           animationDelay: "0.4s",
           animationFillMode: "forwards"
         }}>
           <img 
-            src="/lovable-uploads/404bbbdb-da86-404b-a17c-a2d69428f013.png" 
-            alt="Mary in a meditation pose at the beach" 
+            src="/lovable-uploads/f7de588b-9a90-4d52-8160-29552d535d5b.png" 
+            alt="Wooden bridge over a stream surrounded by greenery" 
             className="rounded-2xl soft-shadow max-w-full h-auto max-h-[500px] object-contain bg-white/20 backdrop-blur-sm p-2"
           />
+          <p className="mt-3 text-xl font-serif text-white bg-primary/80 px-4 py-1 rounded-md">Bridge to Fitness</p>
         </div>
       </div>
     </section>
