@@ -118,12 +118,12 @@ const Products = () => {
             backgroundPosition: "center"
           }}
         >
-          <div className="absolute inset-0 bg-black/30" aria-hidden="true"></div>
+          <div className="absolute inset-0 bg-black/30 backdrop-blur-[2px]" aria-hidden="true"></div>
           <div className="max-w-7xl mx-auto text-center relative z-10">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-6 text-white">
               Fitness and Wellness Favorites
             </h1>
-            <p className="max-w-2xl mx-auto text-white/90">
+            <p className="max-w-2xl mx-auto text-white/90 text-lg">
               Browse our selection of recommended products to complement your fitness journey.
               We use and love each of these items in our personal workouts!
             </p>
@@ -131,11 +131,11 @@ const Products = () => {
         </section>
         
         {/* Shopping Banner with Amazon Link - Modified for better mobile wrapping */}
-        <div className="bg-sky-50 py-4 border-y border-sky-100">
+        <div className="bg-accent/60 py-6 border-y border-accent">
           <div className="max-w-7xl mx-auto text-center px-6">
             <Button 
               variant="ghost" 
-              className="bg-transparent text-green-600 hover:bg-green-50 hover:text-green-700 text-base md:text-xl font-serif"
+              className="bg-white/50 backdrop-blur-sm text-primary hover:bg-white hover:text-primary/80 text-base md:text-xl font-medium rounded-full px-6 py-3 soft-shadow"
               onClick={() => window.open("https://amzn.to/4jyWrxp", "_blank")}
             >
               <ShoppingCart className="mr-2 flex-shrink-0" size={20} />
@@ -150,24 +150,24 @@ const Products = () => {
         {/* Products Grid */}
         <section className="py-16 px-6 md:px-12 bg-background">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {products.map((product) => (
-                <Card key={product.id} className="overflow-hidden h-full flex flex-col hover:shadow-lg transition-shadow duration-300">
-                  <div className="bg-muted">
+                <Card key={product.id} className="overflow-hidden h-full flex flex-col border-accent/20 rounded-2xl card-hover">
+                  <div className="bg-accent/10">
                     <AspectRatio ratio={4/3}>
                       <img 
                         src={product.image} 
                         alt={product.name}
-                        className="object-contain w-full h-full"
+                        className="object-contain w-full h-full p-4"
                       />
                     </AspectRatio>
                   </div>
                   <CardContent className="flex-grow flex flex-col p-6">
-                    <h3 className="text-xl font-serif mb-6">{product.name}</h3>
+                    <h3 className="text-xl font-serif mb-6 text-foreground/90">{product.name}</h3>
                     <Button 
                       asChild 
                       variant="default" 
-                      className="w-full mt-auto" 
+                      className="w-full mt-auto bg-primary hover:bg-primary/90 rounded-full" 
                     >
                       <a href={product.amazonLink} target="_blank" rel="noopener noreferrer">
                         <ShoppingCart className="mr-2" size={18} />
@@ -180,7 +180,7 @@ const Products = () => {
             </div>
             
             {/* Amazon Associate Disclosure */}
-            <div className="mt-16 text-center text-sm text-muted-foreground max-w-2xl mx-auto border-t border-border pt-8">
+            <div className="mt-16 text-center text-sm text-muted-foreground max-w-2xl mx-auto border-t border-accent/30 pt-8">
               <p>
                 As an Amazon Associate, we may earn a small commission from qualifying purchases at no extra cost to you. 
                 Thank you for supporting Mary's Fitness Channel!

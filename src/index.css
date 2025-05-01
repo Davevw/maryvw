@@ -5,7 +5,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 30 30% 99%;
     --foreground: 240 10% 3.9%;
 
     --card: 0 0% 100%;
@@ -14,16 +14,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
 
-    --primary: 240 5.9% 10%;
+    --primary: 320 40% 45%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 240 4.8% 95.9%;
+    --secondary: 300 15% 92%;
     --secondary-foreground: 240 5.9% 10%;
 
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
 
-    --accent: 240 4.8% 95.9%;
+    --accent: 300 20% 90%;
     --accent-foreground: 240 5.9% 10%;
 
     --destructive: 0 84.2% 60.2%;
@@ -31,9 +31,9 @@
 
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 240 5.9% 10%;
+    --ring: 320 40% 45%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
   }
 
   .dark {
@@ -78,7 +78,7 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+    @apply font-serif tracking-wide;
   }
   
   p, span, a, button, li {
@@ -88,6 +88,14 @@
 
 @layer utilities {
   .link-underline {
-    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-foreground after:transition-all after:duration-300 hover:after:w-full;
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full;
+  }
+  
+  .soft-shadow {
+    @apply shadow-[0_4px_12px_rgba(0,0,0,0.08)];
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1;
   }
 }
