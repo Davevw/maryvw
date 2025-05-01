@@ -53,7 +53,6 @@ const Hero = () => {
             alt="Wooden bridge over a stream surrounded by greenery" 
             className="rounded-2xl soft-shadow max-w-full h-auto max-h-[500px] object-contain bg-white/20 backdrop-blur-sm p-2"
           />
-          <p className="mt-3 text-xl font-serif text-white bg-primary/80 px-4 py-1 rounded-md">Bridge to Fitness</p>
         </div>
       </div>
     </section>
