@@ -5,13 +5,7 @@ const Hero = () => {
   return (
     <section 
       id="home" 
-      className="h-screen flex items-center justify-between relative px-6 md:px-12"
-      style={{
-        backgroundImage: "url('/lovable-uploads/f7de588b-9a90-4d52-8160-29552d535d5b.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat"
-      }}
+      className="h-screen flex items-center justify-between relative px-6 md:px-12 bg-gradient-to-b from-background to-secondary/20"
     >
       <div className="max-w-7xl mx-auto w-full relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="max-w-xl bg-white/80 backdrop-blur-sm p-8 rounded-2xl soft-shadow">
