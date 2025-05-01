@@ -23,7 +23,7 @@ const Hero = () => {
             animationFillMode: "forwards"
           }}>
             <p className="text-base md:text-lg max-w-md font-light mb-12 text-foreground/90">
-              Welcome to Mary's Fitness & Lifestyle Channel. Here, you'll find everything you need to live your best life, with programs designed specifically for women over 40.
+              Join us on Zoom Monday thru Friday mornings for stretch, strength, and balance moderate workouts.
             </p>
           </div>
           
