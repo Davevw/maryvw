@@ -43,8 +43,8 @@ const Hero = () => {
           animationFillMode: "forwards"
         }}>
           <img 
-            src="/lovable-uploads/6cc29263-f605-43d0-8286-693ebbdac6e4.png" 
-            alt="Mary - Fitness & Wellness Coach" 
+            src="/lovable-uploads/7a2bf212-dd24-4510-afdb-4dc734631791.png" 
+            alt="Beach meditation - Fitness & Wellness" 
             className="rounded-2xl soft-shadow max-w-full h-auto max-h-[500px] object-contain bg-white/20 backdrop-blur-sm p-2"
           />
         </div>
