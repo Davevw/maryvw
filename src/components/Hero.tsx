@@ -23,7 +23,7 @@ const Hero = () => {
             animationFillMode: "forwards"
           }}>
             <p className="text-base md:text-lg max-w-md font-light mb-12 text-foreground/90">
-              Join us on Zoom Monday thru Friday mornings for stretch, strength, and balance moderate workouts.
+              Join us on Zoom Monday thru Friday mornings for stretch, strength, and balance, moderate workouts.
             </p>
           </div>
           
