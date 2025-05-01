@@ -14,7 +14,7 @@ const Logo = ({ className, variant = "default" }: LogoProps) => {
         variant === "default" ? "h-[6.6rem]" : "h-[4.4rem]"
       )}>
         <span className={cn(
-          "font-serif font-bold",
+          "font-serif font-bold text-primary",
           variant === "default" ? "text-2xl" : "text-xl"
         )}>
           Mary's Fitness Channel
