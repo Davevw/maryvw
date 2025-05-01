@@ -1,4 +1,3 @@
-
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -140,8 +139,7 @@ const Products = () => {
             >
               <ShoppingCart className="mr-2 flex-shrink-0" size={20} />
               <span className="inline-block leading-tight">
-                Shop for these or any items on Amazon<br className="md:hidden" /> 
-                &amp; Support Mary's Fitness Channel!
+                Shop for these or any items on Amazon &amp; Support Mary's Fitness Channel!
               </span>
             </Button>
           </div>
