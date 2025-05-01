@@ -37,6 +37,17 @@ const Hero = () => {
             <ArrowDown size={16} className="transition-transform duration-300 group-hover:translate-y-1" />
           </a>
         </div>
+        
+        <div className="flex flex-col items-center animate-fade-in opacity-0 md:max-w-md" style={{
+          animationDelay: "0.4s",
+          animationFillMode: "forwards"
+        }}>
+          <img 
+            src="/lovable-uploads/6cc29263-f605-43d0-8286-693ebbdac6e4.png" 
+            alt="Mary - Fitness & Wellness Coach" 
+            className="rounded-2xl soft-shadow max-w-full h-auto max-h-[500px] object-contain bg-white/20 backdrop-blur-sm p-2"
+          />
+        </div>
       </div>
     </section>
   );
