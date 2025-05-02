@@ -22,12 +22,12 @@ const Hero = () => {
             animationDelay: "0.6s",
             animationFillMode: "forwards"
           }}>
-            <p className="text-base md:text-lg max-w-md font-light mb-12 text-foreground/90">
+            <p className="text-base md:text-lg max-w-md font-sans mb-12 text-foreground/90">
               Join us on Zoom Monday thru Friday mornings for stretch, strength, and balance, moderate workouts.
             </p>
           </div>
           
-          <a href="#about" className="inline-flex items-center group animate-fade-in opacity-0 px-5 py-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors text-primary" style={{
+          <a href="#about" className="inline-flex items-center group animate-fade-in opacity-0 px-5 py-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors text-primary font-sans" style={{
             animationDelay: "0.8s",
             animationFillMode: "forwards"
           }}>
