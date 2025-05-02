@@ -9,14 +9,14 @@ const LiabilityWaiverCTA = () => (
     <Button
       asChild
       size="lg"
-      className="text-base px-8 py-4 font-semibold rounded-lg bg-blue-600 hover:bg-blue-700 text-white shadow-lg transition-colors duration-200 flex items-center gap-2"
+      className="text-base px-8 py-4 font-semibold rounded-lg bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg transition-colors duration-200 flex items-center gap-2"
     >
       <a href={jotformUrl} target="_blank" rel="noopener noreferrer">
         Liability Waiver
         <ExternalLink size={18} className="ml-1" />
       </a>
     </Button>
-    <p className="mt-4 text-sm text-muted-foreground italic">
+    <p className="mt-4 text-sm text-muted-foreground italic text-center max-w-xs mx-auto px-4">
       (If you are new please complete the above Liability Waiver before your first class.)
     </p>
   </div>
