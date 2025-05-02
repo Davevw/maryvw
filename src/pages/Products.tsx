@@ -1,3 +1,4 @@
+
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -131,10 +132,10 @@ const Products = () => {
         
         {/* Shopping Banner with Amazon Link - Modified for better mobile wrapping */}
         <div className="bg-accent/60 py-6 border-y border-accent">
-          <div className="max-w-7xl mx-auto text-center px-6">
+          <div className="max-w-7xl mx-auto text-center px-4">
             <Button 
               variant="ghost" 
-              className="bg-white/50 backdrop-blur-sm text-primary hover:bg-white hover:text-primary/80 text-base md:text-xl font-medium rounded-full px-6 py-3 soft-shadow"
+              className="bg-white/50 backdrop-blur-sm text-primary hover:bg-white hover:text-primary/80 text-base md:text-xl font-medium rounded-full px-4 py-3 soft-shadow w-full sm:w-auto flex items-center justify-center flex-wrap"
               onClick={() => window.open("https://amzn.to/4jyWrxp", "_blank")}
             >
               <ShoppingCart className="mr-2 flex-shrink-0" size={20} />
