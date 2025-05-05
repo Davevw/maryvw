@@ -1,4 +1,3 @@
-
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -25,7 +24,7 @@ const Products = () => {
       id: 7,
       name: "Basics Neoprene Dumbbell Hand Weights",
       description: "",
-      amazonLink: "https://amzn.to/3EL8pVs",
+      amazonLink: "https://amzn.to/4jO7KSE",
       image: "/lovable-uploads/d349cb88-0a6b-4b87-bf9f-f0c747171285.png"
     },
     {
