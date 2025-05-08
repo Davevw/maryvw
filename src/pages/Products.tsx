@@ -1,3 +1,4 @@
+
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -129,16 +130,16 @@ const Products = () => {
           </div>
         </section>
         
-        {/* Shopping Banner with Amazon Link - Centered on all devices */}
+        {/* Shopping Banner with Amazon Link - Modified for better mobile text wrapping */}
         <div className="bg-accent/60 py-6 border-y border-accent">
           <div className="max-w-7xl mx-auto flex justify-center px-4">
             <Button 
               variant="ghost" 
-              className="bg-white/50 backdrop-blur-sm text-primary hover:bg-white hover:text-primary/80 text-base md:text-xl font-medium rounded-full px-4 py-3 soft-shadow text-center font-sans"
+              className="bg-white/50 backdrop-blur-sm text-primary hover:bg-white hover:text-primary/80 text-base md:text-xl font-medium rounded-full px-4 py-3 soft-shadow text-center font-sans w-full max-w-lg flex flex-wrap justify-center"
               onClick={() => window.open("https://amzn.to/4jyWrxp", "_blank")}
             >
               <ShoppingCart className="mr-2 flex-shrink-0" size={20} />
-              <span>
+              <span className="text-center">
                 Shop for these or any items on Amazon &amp; Support Mary's Fitness Channel!
               </span>
             </Button>
