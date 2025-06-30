@@ -65,7 +65,7 @@ const Food = () => {
         <section 
           className="pt-32 pb-16 px-6 md:px-12 relative"
           style={{
-            backgroundImage: "url('/lovable-uploads/2a5bba63-8751-4b38-a9e8-df99db58be4d.png')",
+            backgroundImage: "url('/lovable-uploads/df4d7ada-910a-4fe9-ac91-7befc3525cac.png')",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}
