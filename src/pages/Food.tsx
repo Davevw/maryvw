@@ -127,11 +127,16 @@ const Food = () => {
               <div className="bg-white rounded-2xl p-2 soft-shadow">
                 <AspectRatio ratio={4/3}>
                   <img 
-                    src="/lovable-uploads/b532e662-de4e-451c-8749-c43f1882fc9a.png" 
-                    alt="Healthy cooking ingredients"
+                    src="/lovable-uploads/7e96451d-627d-412e-8ecb-aa7e2b3360e2.png" 
+                    alt="Mary's hearty soup recipes"
                     className="object-cover w-full h-full rounded-xl"
                   />
                 </AspectRatio>
+                <div className="text-center p-4">
+                  <p className="text-sm text-muted-foreground italic">
+                    Mary's hearty soup recipes are perfect for warming up after a workout or sharing with family on chilly evenings
+                  </p>
+                </div>
               </div>
             </div>
           </div>
