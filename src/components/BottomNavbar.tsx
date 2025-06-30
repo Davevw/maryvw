@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { Home, Phone, Info, Briefcase, ShoppingCart } from "lucide-react";
+import { Home, Phone, Info, Briefcase, ShoppingCart, ChefHat } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const BottomNavbar = () => {
@@ -11,8 +11,8 @@ const BottomNavbar = () => {
     { name: "Home", icon: Home, href: "/" },
     { name: "About", icon: Info, href: "/#about" },
     { name: "Programs", icon: Briefcase, href: "/#work" },
-    { name: "Product Store", icon: ShoppingCart, href: "/products" },
-    { name: "Contact", icon: Phone, href: "/#contact" }
+    { name: "Food", icon: ChefHat, href: "/food" },
+    { name: "Products", icon: ShoppingCart, href: "/products" },
   ];
 
   return (
