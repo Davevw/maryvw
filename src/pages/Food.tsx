@@ -80,7 +80,7 @@ const Food = () => {
             backgroundPosition: "center"
           }}
         >
-          <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" aria-hidden="true"></div>
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]" aria-hidden="true"></div>
           <div className="max-w-7xl mx-auto text-center relative z-10">
             <div className="flex items-center justify-center gap-3 mb-6">
               <ChefHat className="w-12 h-12 text-white" />
@@ -109,7 +109,7 @@ const Food = () => {
               Recipe Spotlight
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div className="bg-white rounded-2xl p-2 soft-shadow scale-90">
+                <div className="bg-white rounded-2xl p-2 soft-shadow scale-75">
                 <AspectRatio ratio={4/3}>
                   <img 
                     src="/lovable-uploads/5b54baa7-9e53-4b9e-9d30-b2e8455bc14a.png" 
@@ -312,7 +312,7 @@ const Food = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-white rounded-2xl p-2 soft-shadow">
+              <div className="bg-white rounded-2xl p-2 soft-shadow scale-75">
                 <AspectRatio ratio={4/3}>
                   <img 
                     src="/lovable-uploads/7e96451d-627d-412e-8ecb-aa7e2b3360e2.png" 
