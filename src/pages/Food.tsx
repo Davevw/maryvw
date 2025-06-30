@@ -1,5 +1,6 @@
 
 import { ChefHat, Heart, Utensils, Clock, Users } from "lucide-react";
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
@@ -8,6 +9,7 @@ import Footer from "@/components/Footer";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Food = () => {
+  const [showFullRecipe, setShowFullRecipe] = useState(false);
   const recipeCategories = [
     {
       title: "Healthy Breakfast",
@@ -107,7 +109,7 @@ const Food = () => {
               Recipe Spotlight
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="bg-white rounded-2xl p-2 soft-shadow">
+                <div className="bg-white rounded-2xl p-2 soft-shadow scale-90">
                 <AspectRatio ratio={4/3}>
                   <img 
                     src="/lovable-uploads/5b54baa7-9e53-4b9e-9d30-b2e8455bc14a.png" 
@@ -145,8 +147,11 @@ const Food = () => {
                     </ul>
                   </div>
                 </div>
-                <Button className="bg-primary hover:bg-primary/90 rounded-full px-8">
-                  View Full Recipe
+                <Button 
+                  className="bg-primary hover:bg-primary/90 rounded-full px-8"
+                  onClick={() => setShowFullRecipe(!showFullRecipe)}
+                >
+                  {showFullRecipe ? "Hide Recipe" : "View Full Recipe"}
                 </Button>
               </div>
             </div>
@@ -154,124 +159,126 @@ const Food = () => {
         </section>
 
         {/* Detailed Recipe */}
-        <section className="py-16 px-6 md:px-12">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 soft-shadow">
-              <h3 className="text-2xl font-serif mb-6">Strawberry Cheesecake Bars - Full Recipe</h3>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                <div>
-                  <h4 className="font-semibold mb-4">For the Crust:</h4>
-                  <ul className="space-y-2 text-sm">
-                    <li>• 5 to 6 small croissants</li>
-                    <li>• 2 tablespoons melted butter</li>
-                    <li>• 2 tablespoons monk sugar (or preferred sugar substitute)</li>
-                  </ul>
-                  
-                  <h4 className="font-semibold mb-4 mt-6">For the Cheesecake Filling:</h4>
-                  <ul className="space-y-2 text-sm">
-                    <li>• 2 blocks (16 ounces) cream cheese, softened</li>
-                    <li>• 1 cup Greek yogurt</li>
-                    <li>• 3/4 cup monk sugar (or preferred sugar substitute)</li>
-                    <li>• 3 eggs</li>
-                    <li>• 2 tablespoons flour</li>
-                    <li>• 1 teaspoon vanilla extract</li>
-                  </ul>
-                </div>
+        {showFullRecipe && (
+          <section className="py-16 px-6 md:px-12">
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-white rounded-2xl p-8 soft-shadow">
+                <h3 className="text-2xl font-serif mb-6">Strawberry Cheesecake Bars - Full Recipe</h3>
                 
-                <div>
-                  <h4 className="font-semibold mb-4">For the Strawberry Syrup:</h4>
-                  <ul className="space-y-2 text-sm">
-                    <li>• 1 1/2 cups strawberries, divided (fresh or frozen)</li>
-                    <li>• 1/4 cup monk sugar (or preferred sugar substitute)</li>
-                  </ul>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                  <div>
+                    <h4 className="font-semibold mb-4">For the Crust:</h4>
+                    <ul className="space-y-2 text-sm">
+                      <li>• 5 to 6 small croissants</li>
+                      <li>• 2 tablespoons melted butter</li>
+                      <li>• 2 tablespoons monk sugar (or preferred sugar substitute)</li>
+                    </ul>
+                    
+                    <h4 className="font-semibold mb-4 mt-6">For the Cheesecake Filling:</h4>
+                    <ul className="space-y-2 text-sm">
+                      <li>• 2 blocks (16 ounces) cream cheese, softened</li>
+                      <li>• 1 cup Greek yogurt</li>
+                      <li>• 3/4 cup monk sugar (or preferred sugar substitute)</li>
+                      <li>• 3 eggs</li>
+                      <li>• 2 tablespoons flour</li>
+                      <li>• 1 teaspoon vanilla extract</li>
+                    </ul>
+                  </div>
                   
-                  <h4 className="font-semibold mb-4 mt-6">For the Crumble Topping:</h4>
-                  <ul className="space-y-2 text-sm">
-                    <li>• 1/2 cup + 2 tablespoons flour</li>
-                    <li>• 1/4 cup brown sugar (or coconut sugar, brown sugar substitute, or Splenda)</li>
-                    <li>• 1/4 cup cold butter, cubed</li>
-                  </ul>
+                  <div>
+                    <h4 className="font-semibold mb-4">For the Strawberry Syrup:</h4>
+                    <ul className="space-y-2 text-sm">
+                      <li>• 1 1/2 cups strawberries, divided (fresh or frozen)</li>
+                      <li>• 1/4 cup monk sugar (or preferred sugar substitute)</li>
+                    </ul>
+                    
+                    <h4 className="font-semibold mb-4 mt-6">For the Crumble Topping:</h4>
+                    <ul className="space-y-2 text-sm">
+                      <li>• 1/2 cup + 2 tablespoons flour</li>
+                      <li>• 1/4 cup brown sugar (or coconut sugar, brown sugar substitute, or Splenda)</li>
+                      <li>• 1/4 cup cold butter, cubed</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
 
-              <div className="space-y-6">
-                <div>
-                  <h4 className="font-semibold mb-3">Instructions:</h4>
-                  
-                  <div className="space-y-4 text-sm">
-                    <div>
-                      <h5 className="font-medium mb-2">1. Prepare the Strawberry Syrup:</h5>
-                      <ol className="list-decimal list-inside space-y-1 ml-4">
-                        <li>Chop all the strawberries. Set aside half (about 3/4 cup) for later.</li>
-                        <li>In a medium saucepan over medium heat, combine half of the strawberries (about 3/4 cup) with 1/4 cup monk sugar.</li>
-                        <li>Cook, stirring occasionally, until the strawberries break down and the mixture thickens slightly (about 5-7 minutes).</li>
-                        <li>Remove from heat and let the mixture cool completely.</li>
-                        <li>Once cooled, gently fold in the remaining chopped strawberries. Set aside.</li>
-                      </ol>
-                    </div>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold mb-3">Instructions:</h4>
+                    
+                    <div className="space-y-4 text-sm">
+                      <div>
+                        <h5 className="font-medium mb-2">1. Prepare the Strawberry Syrup:</h5>
+                        <ol className="list-decimal list-inside space-y-1 ml-4">
+                          <li>Chop all the strawberries. Set aside half (about 3/4 cup) for later.</li>
+                          <li>In a medium saucepan over medium heat, combine half of the strawberries (about 3/4 cup) with 1/4 cup monk sugar.</li>
+                          <li>Cook, stirring occasionally, until the strawberries break down and the mixture thickens slightly (about 5-7 minutes).</li>
+                          <li>Remove from heat and let the mixture cool completely.</li>
+                          <li>Once cooled, gently fold in the remaining chopped strawberries. Set aside.</li>
+                        </ol>
+                      </div>
 
-                    <div>
-                      <h5 className="font-medium mb-2">2. Make the Crust:</h5>
-                      <ol className="list-decimal list-inside space-y-1 ml-4">
-                        <li>Preheat your oven to 350°F (175°C). Line a 9x9-inch square baking pan with parchment paper.</li>
-                        <li>Slice the croissants into small pieces and press them firmly into the bottom of the prepared pan to form an even layer.</li>
-                        <li>Brush the croissant crust with melted butter and sprinkle evenly with 2 tablespoons monk sugar.</li>
-                        <li>Cover with another piece of parchment paper and place a weight (such as another oven-safe dish) on top.</li>
-                        <li>Bake for 15 minutes. Remove the parchment and weight, then bake an additional 5 to 7 minutes until golden brown.</li>
-                        <li>Allow the crust to cool while you prepare the filling.</li>
-                      </ol>
-                    </div>
+                      <div>
+                        <h5 className="font-medium mb-2">2. Make the Crust:</h5>
+                        <ol className="list-decimal list-inside space-y-1 ml-4">
+                          <li>Preheat your oven to 350°F (175°C). Line a 9x9-inch square baking pan with parchment paper.</li>
+                          <li>Slice the croissants into small pieces and press them firmly into the bottom of the prepared pan to form an even layer.</li>
+                          <li>Brush the croissant crust with melted butter and sprinkle evenly with 2 tablespoons monk sugar.</li>
+                          <li>Cover with another piece of parchment paper and place a weight (such as another oven-safe dish) on top.</li>
+                          <li>Bake for 15 minutes. Remove the parchment and weight, then bake an additional 5 to 7 minutes until golden brown.</li>
+                          <li>Allow the crust to cool while you prepare the filling.</li>
+                        </ol>
+                      </div>
 
-                    <div>
-                      <h5 className="font-medium mb-2">3. Prepare the Cheesecake Filling:</h5>
-                      <ol className="list-decimal list-inside space-y-1 ml-4">
-                        <li>In a large mixing bowl, beat the softened cream cheese until smooth.</li>
-                        <li>Add 3/4 cup monk sugar and continue beating until well combined.</li>
-                        <li>Add eggs one at a time, mixing well after each addition.</li>
-                        <li>Mix in the Greek yogurt, flour, and vanilla extract until the batter is smooth and creamy (about 2 minutes).</li>
-                      </ol>
-                    </div>
+                      <div>
+                        <h5 className="font-medium mb-2">3. Prepare the Cheesecake Filling:</h5>
+                        <ol className="list-decimal list-inside space-y-1 ml-4">
+                          <li>In a large mixing bowl, beat the softened cream cheese until smooth.</li>
+                          <li>Add 3/4 cup monk sugar and continue beating until well combined.</li>
+                          <li>Add eggs one at a time, mixing well after each addition.</li>
+                          <li>Mix in the Greek yogurt, flour, and vanilla extract until the batter is smooth and creamy (about 2 minutes).</li>
+                        </ol>
+                      </div>
 
-                    <div>
-                      <h5 className="font-medium mb-2">4. Assemble and Bake:</h5>
-                      <ol className="list-decimal list-inside space-y-1 ml-4">
-                        <li>Pour the cheesecake filling evenly over the cooled croissant crust.</li>
-                        <li>Bake for 40 minutes at 350°F (175°C).</li>
-                      </ol>
-                    </div>
+                      <div>
+                        <h5 className="font-medium mb-2">4. Assemble and Bake:</h5>
+                        <ol className="list-decimal list-inside space-y-1 ml-4">
+                          <li>Pour the cheesecake filling evenly over the cooled croissant crust.</li>
+                          <li>Bake for 40 minutes at 350°F (175°C).</li>
+                        </ol>
+                      </div>
 
-                    <div>
-                      <h5 className="font-medium mb-2">5. Prepare the Crumble Topping:</h5>
-                      <ol className="list-decimal list-inside space-y-1 ml-4">
-                        <li>While the cheesecake is baking, combine the flour and brown sugar in a bowl.</li>
-                        <li>Add the cold, cubed butter and mix with your fingers or a pastry cutter until the mixture becomes crumbly.</li>
-                      </ol>
-                    </div>
+                      <div>
+                        <h5 className="font-medium mb-2">5. Prepare the Crumble Topping:</h5>
+                        <ol className="list-decimal list-inside space-y-1 ml-4">
+                          <li>While the cheesecake is baking, combine the flour and brown sugar in a bowl.</li>
+                          <li>Add the cold, cubed butter and mix with your fingers or a pastry cutter until the mixture becomes crumbly.</li>
+                        </ol>
+                      </div>
 
-                    <div>
-                      <h5 className="font-medium mb-2">6. Add Strawberry Syrup and Crumble Topping:</h5>
-                      <ol className="list-decimal list-inside space-y-1 ml-4">
-                        <li>After the initial 40 minutes of baking, remove the cheesecake from the oven.</li>
-                        <li>Spread the prepared strawberry syrup evenly over the cheesecake layer.</li>
-                        <li>Sprinkle the crumble topping evenly over the strawberry layer.</li>
-                        <li>Return to the oven and bake for an additional 20 to 25 minutes, or until the topping is golden brown.</li>
-                      </ol>
-                    </div>
+                      <div>
+                        <h5 className="font-medium mb-2">6. Add Strawberry Syrup and Crumble Topping:</h5>
+                        <ol className="list-decimal list-inside space-y-1 ml-4">
+                          <li>After the initial 40 minutes of baking, remove the cheesecake from the oven.</li>
+                          <li>Spread the prepared strawberry syrup evenly over the cheesecake layer.</li>
+                          <li>Sprinkle the crumble topping evenly over the strawberry layer.</li>
+                          <li>Return to the oven and bake for an additional 20 to 25 minutes, or until the topping is golden brown.</li>
+                        </ol>
+                      </div>
 
-                    <div>
-                      <h5 className="font-medium mb-2">7. Cool and Serve:</h5>
-                      <ol className="list-decimal list-inside space-y-1 ml-4">
-                        <li>Remove the cheesecake bars from the oven and let them cool completely in the pan.</li>
-                        <li>Refrigerate for several hours or overnight before slicing into bars and serving.</li>
-                      </ol>
+                      <div>
+                        <h5 className="font-medium mb-2">7. Cool and Serve:</h5>
+                        <ol className="list-decimal list-inside space-y-1 ml-4">
+                          <li>Remove the cheesecake bars from the oven and let them cool completely in the pan.</li>
+                          <li>Refrigerate for several hours or overnight before slicing into bars and serving.</li>
+                        </ol>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
 
         {/* About Food Philosophy Section */}
         <section className="py-16 px-6 md:px-12 bg-accent/20">
@@ -354,7 +361,7 @@ const Food = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {featuredRecipes.slice(1).map((recipe, index) => (
                 <Card key={index} className="overflow-hidden card-hover border-accent/20">
-                  <div className="bg-accent/20 h-48 flex items-center justify-center">
+                  <div className={`bg-accent/20 h-48 flex items-center justify-center ${recipe.title === "Mediterranean Quinoa Bowl" ? "opacity-60" : ""}`}>
                     <ChefHat className="w-16 h-16 text-primary/60" />
                   </div>
                   <CardContent className="p-6">
