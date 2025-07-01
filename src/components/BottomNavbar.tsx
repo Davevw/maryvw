@@ -1,11 +1,31 @@
 
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Home, Phone, Info, Briefcase, ShoppingCart, ChefHat } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const BottomNavbar = () => {
-  const pathname = window.location.pathname;
+  const navigate = useNavigate();
+  const location = useLocation();
+  const pathname = location.pathname;
+
+  const handleHashNavigation = (href: string) => {
+    const hash = href.substring(2); // Remove /#
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
 
   const navItems = [
     { name: "Home", icon: Home, href: "/" },
@@ -29,16 +49,16 @@ const BottomNavbar = () => {
           return (
             <div key={item.name}>
               {item.href.startsWith("/#") ? (
-                <a 
-                  href={item.href.substring(1)} 
+                <button 
+                  onClick={() => handleHashNavigation(item.href)}
                   className={cn(
-                    "flex flex-col items-center text-xs p-2", 
+                    "flex flex-col items-center text-xs p-2 bg-transparent border-none cursor-pointer", 
                     isActive ? "text-primary" : "text-muted-foreground"
                   )}
                 >
                   <item.icon size={20} />
                   <span className="mt-1">{item.name}</span>
-                </a>
+                </button>
               ) : (
                 <Link 
                   to={item.href} 

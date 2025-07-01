@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import {
   NavigationMenu,
   NavigationMenuList,
@@ -13,9 +13,30 @@ import {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleHashNavigation = (href: string) => {
+    const hash = href.substring(2); // Remove /#
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    setIsOpen(false);
   };
 
   useEffect(() => {
@@ -61,12 +82,12 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 link.href.startsWith('/#') ? (
                   <NavigationMenuItem key={link.name}>
-                    <a
-                      href={link.href.substring(1)}
-                      className="text-sm uppercase tracking-wide link-underline px-4 py-2"
+                    <button
+                      onClick={() => handleHashNavigation(link.href)}
+                      className="text-sm uppercase tracking-wide link-underline px-4 py-2 bg-transparent border-none cursor-pointer"
                     >
                       {link.name}
-                    </a>
+                    </button>
                   </NavigationMenuItem>
                 ) : (
                   <NavigationMenuItem key={link.name}>
@@ -98,14 +119,13 @@ const Navbar = () => {
         <div className="fixed inset-0 top-16 bg-background z-40 flex flex-col items-center pt-20 md:hidden animate-fade-in">
           {navLinks.map((link) => (
             link.href.startsWith('/#') ? (
-              <a
+              <button
                 key={link.name}
-                href={link.href.substring(1)}
-                className="py-4 text-lg uppercase tracking-wide"
-                onClick={toggleMenu}
+                onClick={() => handleHashNavigation(link.href)}
+                className="py-4 text-lg uppercase tracking-wide bg-transparent border-none cursor-pointer"
               >
                 {link.name}
-              </a>
+              </button>
             ) : (
               <Link
                 key={link.name}
