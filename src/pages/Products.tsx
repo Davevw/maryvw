@@ -39,7 +39,7 @@ const Products = () => {
       id: 9,
       name: "CAP Barbell Coated Hex Dumbbells",
       description: "",
-      amazonLink: "https://www.amazon.com/dp/B002OEQ50Y?tag=vwhealthstore-20",
+      amazonLink: "https://amzn.to/4b6FhG7",
       image: "/lovable-uploads/65b216f3-67c3-4812-9271-dc6939147d7e.png"
     },
     // Second row - mix in Peloton bike (expensive item)
