@@ -57,14 +57,6 @@ const Products = () => {
       amazonLink: "https://www.amazon.com/dp/B00XM2MXK8?tag=vwhealthstore-20",
       image: "/lovable-uploads/570785a7-809b-42da-974b-e320f3891e13.png"
     },
-    // Third row with Concept2 rower (moved up from fourth row) and regular items
-    {
-      id: 15,
-      name: "Concept2 Model D Indoor Rowing Machine",
-      description: "",
-      amazonLink: "https://www.amazon.com/dp/B00NH9WEUA?tag=vwhealthstore-20",
-      image: "/lovable-uploads/bc2b43c2-ede6-4c67-9861-fde94c62eec0.png"
-    },
     {
       id: 12,
       name: "Basics Vinyl Kettlebell",
