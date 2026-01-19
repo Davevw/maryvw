@@ -99,6 +99,13 @@ const Products = () => {
       description: "",
       amazonLink: "https://amzn.to/4quFMP1",
       image: "/lovable-uploads/pull-up-bands.png"
+    },
+    {
+      id: 18,
+      name: "Thorne Magnesium Glycinate",
+      description: "Supports restful sleep, muscle relaxation, heart health, and metabolism. Chelated magnesium capsules that are third-party certified and gluten, dairy, and soy-free.",
+      amazonLink: "https://amzn.to/4qouBas",
+      image: "/lovable-uploads/thorne-magnesium-glycinate.png"
     }
   ];
 
