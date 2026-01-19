@@ -78,14 +78,6 @@ const Products = () => {
       description: "",
       amazonLink: "https://www.amazon.com/dp/B01N9AY1JG?tag=vwhealthstore-20",
       image: "/lovable-uploads/4059073a-82fd-42d4-8e97-c6d3fd1df244.png"
-    },
-    // Last item - Peloton Tread at the end
-    {
-      id: 17,
-      name: "Peloton Tread | Treadmill for Running, Walking, and Hiking with Manual or Auto-Incline Options and Immersive 24\" HD Touchscreen",
-      description: "",
-      amazonLink: "https://www.amazon.com/dp/B09LY8X66W?tag=vwhealthstore-20",
-      image: "/lovable-uploads/b1498311-c3be-4f82-aa6b-4f907f475446.png"
     }
   ];
 
