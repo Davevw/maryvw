@@ -78,6 +78,13 @@ const Products = () => {
       description: "",
       amazonLink: "https://amzn.to/4pMQC1K",
       image: "/lovable-uploads/4059073a-82fd-42d4-8e97-c6d3fd1df244.png"
+    },
+    {
+      id: 15,
+      name: "Thorne Men's Multi 50+",
+      description: "A comprehensive daily multivitamin formulated specifically for men over 50. Supports energy, immune function, and healthy aging with bioavailable nutrients.",
+      amazonLink: "https://amzn.to/45FxQlN",
+      image: "/lovable-uploads/thorne-mens-multi-50.png"
     }
   ];
 
