@@ -51,13 +51,6 @@ const Products = () => {
       image: "/lovable-uploads/51b12711-3b8b-4649-81c0-1b052b6b8132.png"
     },
     {
-      id: 16,
-      name: "Peloton Indoor Exercise Bikes, Original Peloton with Interactive Screen for instructors and sessions",
-      description: "",
-      amazonLink: "https://www.amazon.com/dp/B09N3HZGZW?tag=vwhealthstore-20",
-      image: "/lovable-uploads/e38b88e3-dd4c-4fde-ae51-6d956dcdad34.png"
-    },
-    {
       id: 11,
       name: "Basics High-Density Round Foam Roller",
       description: "",
