@@ -54,7 +54,7 @@ const Products = () => {
       id: 11,
       name: "Basics High-Density Round Foam Roller",
       description: "",
-      amazonLink: "https://www.amazon.com/dp/B00XM2MXK8?tag=vwhealthstore-20",
+      amazonLink: "https://amzn.to/4sSIhfG",
       image: "/lovable-uploads/570785a7-809b-42da-974b-e320f3891e13.png"
     },
     {
