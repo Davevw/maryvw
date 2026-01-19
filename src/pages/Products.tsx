@@ -92,6 +92,13 @@ const Products = () => {
       description: "A comprehensive daily multivitamin designed for women over 50. Supports bone health, energy levels, and hormonal balance with highly absorbable ingredients.",
       amazonLink: "https://amzn.to/4sLFtAK",
       image: "/lovable-uploads/thorne-womens-multi-50.png"
+    },
+    {
+      id: 17,
+      name: "Pull Up Bands, Resistance Bands, Pull Up Assistance Band Exercise Bands for Men & Women Working Out, Body Stretching, Physical Therapy, Muscle Training",
+      description: "",
+      amazonLink: "https://amzn.to/4quFMP1",
+      image: "/lovable-uploads/pull-up-bands.png"
     }
   ];
 
