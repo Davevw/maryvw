@@ -30,10 +30,10 @@ const Products = () => {
     },
     {
       id: 2,
-      name: "Gaiam Essentials Thick Yoga Mat Fitness & Exercise Mat with Easy-Cinch Yoga Mat Carrier Strap, 72\"L x 24\"W x 2/5 Inch Thick",
+      name: "Abiarst Stretching Strap Yoga Straps for Physical Therapy, 10 Loops Non-Elastic Stretch Band for Pilates, Flexibility, Exercise and Gymnastics",
       description: "",
       amazonLink: "https://amzn.to/49OZiid",
-      image: "/lovable-uploads/8c889473-0e89-4767-b071-75383589fe89.png"
+      image: "/lovable-uploads/abiarst-yoga-strap.png"
     },
     {
       id: 3,
