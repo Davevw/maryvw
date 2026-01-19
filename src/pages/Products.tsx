@@ -68,7 +68,7 @@ const Products = () => {
       id: 13,
       name: "Fit Simplify Resistance Loop Exercise Bands with Instruction Guide and Carry Bag, Set of 5",
       description: "",
-      amazonLink: "https://www.amazon.com/dp/B01AVDVHTI?tag=vwhealthstore-20",
+      amazonLink: "https://amzn.to/4jNSNjX",
       image: "/lovable-uploads/57ff4c34-9e9e-4c27-81ca-f374ef264a0c.png"
     },
     // Fourth row with regular items
