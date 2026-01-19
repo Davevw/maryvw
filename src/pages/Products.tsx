@@ -47,7 +47,7 @@ const Products = () => {
       id: 10,
       name: "YOGA TUNE UP® Therapy Balls in Tote by Tune Up Fitness",
       description: "",
-      amazonLink: "https://www.amazon.com/dp/B00BINWU7U?tag=vwhealthstore-20",
+      amazonLink: "https://amzn.to/3ZinMv9",
       image: "/lovable-uploads/51b12711-3b8b-4649-81c0-1b052b6b8132.png"
     },
     {
