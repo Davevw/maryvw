@@ -114,6 +114,13 @@ const Products = () => {
       description: "Contains all natural forms of Vitamin E for antioxidant support, cardiovascular health, and skin protection. Helps neutralize free radicals and supports cellular health.",
       amazonLink: "https://amzn.to/4qZlM6R",
       image: "/lovable-uploads/thorne-ultimate-e.png"
+    },
+    {
+      id: 14,
+      name: "Thorne Zinc Picolinate 30mg",
+      description: "Well-absorbed zinc supplement for growth and immune function. Promotes healthy skin and eyes. Third-party certified, gluten, dairy, and soy-free.",
+      amazonLink: "https://amzn.to/4sOtlz5",
+      image: "/lovable-uploads/thorne-zinc-picolinate.png"
     }
   ];
 
