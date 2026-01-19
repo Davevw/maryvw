@@ -107,6 +107,13 @@ const Products = () => {
       description: "Supports restful sleep, muscle relaxation, heart health, and metabolism. Chelated magnesium capsules that are third-party certified and gluten, dairy, and soy-free.",
       amazonLink: "https://amzn.to/4qouBas",
       image: "/lovable-uploads/thorne-magnesium-glycinate.png"
+    },
+    {
+      id: 13,
+      name: "Thorne Ultimate-E",
+      description: "Contains all natural forms of Vitamin E for antioxidant support, cardiovascular health, and skin protection. Helps neutralize free radicals and supports cellular health.",
+      amazonLink: "https://amzn.to/4qZlM6R",
+      image: "/lovable-uploads/thorne-ultimate-e.png"
     }
   ];
 
