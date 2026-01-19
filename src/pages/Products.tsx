@@ -61,7 +61,7 @@ const Products = () => {
       id: 12,
       name: "Basics Vinyl Kettlebell",
       description: "",
-      amazonLink: "https://www.amazon.com/dp/B0731D37LZ?tag=vwhealthstore-20",
+      amazonLink: "https://amzn.to/4rm8odt",
       image: "/lovable-uploads/29ab1bf7-086a-403d-9ff5-4beaf1ff6d92.png"
     },
     {
