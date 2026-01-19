@@ -76,13 +76,6 @@ const Products = () => {
       description: "",
       amazonLink: "https://amzn.to/4pMQC1K",
       image: "/lovable-uploads/4059073a-82fd-42d4-8e97-c6d3fd1df244.png"
-    },
-    {
-      id: 9,
-      name: "Pull Up Bands, Resistance Bands, Pull Up Assistance Band Exercise Bands for Men & Women Working Out, Body Stretching, Physical Therapy, Muscle Training",
-      description: "",
-      amazonLink: "https://amzn.to/4quFMP1",
-      image: "/lovable-uploads/pull-up-bands.png"
     }
   ];
 
