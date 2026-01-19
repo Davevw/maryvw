@@ -32,7 +32,7 @@ const Products = () => {
       id: 2,
       name: "Abiarst Stretching Strap Yoga Straps for Physical Therapy, 10 Loops Non-Elastic Stretch Band for Pilates, Flexibility, Exercise and Gymnastics",
       description: "",
-      amazonLink: "https://amzn.to/49OZiid",
+      amazonLink: "https://amzn.to/3LUf9DZ",
       image: "/lovable-uploads/abiarst-yoga-strap.png"
     },
     {
