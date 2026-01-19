@@ -85,6 +85,13 @@ const Products = () => {
       description: "A comprehensive daily multivitamin formulated specifically for men over 50. Supports energy, immune function, and healthy aging with bioavailable nutrients.",
       amazonLink: "https://amzn.to/45FxQlN",
       image: "/lovable-uploads/thorne-mens-multi-50.png"
+    },
+    {
+      id: 16,
+      name: "Thorne Women's Multi 50+",
+      description: "A comprehensive daily multivitamin designed for women over 50. Supports bone health, energy levels, and hormonal balance with highly absorbable ingredients.",
+      amazonLink: "https://amzn.to/4sLFtAK",
+      image: "/lovable-uploads/thorne-womens-multi-50.png"
     }
   ];
 
