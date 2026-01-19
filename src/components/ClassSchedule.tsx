@@ -21,14 +21,14 @@ const ClassSchedule = () => {
     {
       day: "W",
       time: "8 AM",
-      type: "Mary's Choice",
+      type: "Strength",
       format: "Zoom",
       length: "30 mins"
     },
     {
       day: "Th",
       time: "8 AM",
-      type: "Stretch",
+      type: "Strength",
       format: "Zoom",
       length: "30 mins"
     },
