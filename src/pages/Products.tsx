@@ -76,7 +76,7 @@ const Products = () => {
       id: 14,
       name: "Tune Up Fitness Yoga Set - Various Ball Sizes and Colors, Original, Plus, Alpha Solo, Coregeous in Black Bag",
       description: "",
-      amazonLink: "https://www.amazon.com/dp/B01N9AY1JG?tag=vwhealthstore-20",
+      amazonLink: "https://amzn.to/4pMQC1K",
       image: "/lovable-uploads/4059073a-82fd-42d4-8e97-c6d3fd1df244.png"
     }
   ];
