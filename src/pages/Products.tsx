@@ -25,7 +25,7 @@ const Products = () => {
       id: 7,
       name: "Basics Neoprene Dumbbell Hand Weights",
       description: "",
-      amazonLink: "https://www.amazon.com/dp/B074DZ7SL9?tag=vwhealthstore-20",
+      amazonLink: "https://amzn.to/4b90krC",
       image: "/lovable-uploads/d349cb88-0a6b-4b87-bf9f-f0c747171285.png"
     },
     {
