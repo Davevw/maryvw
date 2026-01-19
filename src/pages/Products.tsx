@@ -25,21 +25,21 @@ const Products = () => {
       id: 7,
       name: "Basics Neoprene Dumbbell Hand Weights",
       description: "",
-      amazonLink: "https://amzn.to/3Yvt1I9",
+      amazonLink: "https://www.amazon.com/dp/B074DZ7SL9?tag=vwhealthstore-20",
       image: "/lovable-uploads/d349cb88-0a6b-4b87-bf9f-f0c747171285.png"
     },
     {
       id: 8,
       name: "Gaiam Essentials Thick Yoga Mat Fitness & Exercise Mat with Easy-Cinch Yoga Mat Carrier Strap, 72\"L x 24\"W x 2/5 Inch Thick",
       description: "",
-      amazonLink: "https://amzn.to/3SkiJXv",
+      amazonLink: "https://www.amazon.com/dp/B07H9PQW2N?tag=vwhealthstore-20",
       image: "/lovable-uploads/8c889473-0e89-4767-b071-75383589fe89.png"
     },
     {
       id: 9,
       name: "CAP Barbell Coated Hex Dumbbells",
       description: "",
-      amazonLink: "https://a.co/d/hkzCBVX",
+      amazonLink: "https://www.amazon.com/dp/B002OEQ50Y?tag=vwhealthstore-20",
       image: "/lovable-uploads/65b216f3-67c3-4812-9271-dc6939147d7e.png"
     },
     // Second row - mix in Peloton bike (expensive item)
@@ -47,21 +47,21 @@ const Products = () => {
       id: 10,
       name: "YOGA TUNE UP® Therapy Balls in Tote by Tune Up Fitness",
       description: "",
-      amazonLink: "https://a.co/d/3hlS5Xo",
+      amazonLink: "https://www.amazon.com/dp/B00BINWU7U?tag=vwhealthstore-20",
       image: "/lovable-uploads/51b12711-3b8b-4649-81c0-1b052b6b8132.png"
     },
     {
       id: 16,
       name: "Peloton Indoor Exercise Bikes, Original Peloton with Interactive Screen for instructors and sessions",
       description: "",
-      amazonLink: "https://amzn.to/3RErYlh",
+      amazonLink: "https://www.amazon.com/dp/B09N3HZGZW?tag=vwhealthstore-20",
       image: "/lovable-uploads/e38b88e3-dd4c-4fde-ae51-6d956dcdad34.png"
     },
     {
       id: 11,
       name: "Basics High-Density Round Foam Roller",
       description: "",
-      amazonLink: "https://a.co/d/jkB53YX",
+      amazonLink: "https://www.amazon.com/dp/B00XM2MXK8?tag=vwhealthstore-20",
       image: "/lovable-uploads/570785a7-809b-42da-974b-e320f3891e13.png"
     },
     // Third row with Concept2 rower (moved up from fourth row) and regular items
@@ -69,21 +69,21 @@ const Products = () => {
       id: 15,
       name: "Concept2 Model D Indoor Rowing Machine",
       description: "",
-      amazonLink: "https://amzn.to/4cSdXdm",
+      amazonLink: "https://www.amazon.com/dp/B00NH9WEUA?tag=vwhealthstore-20",
       image: "/lovable-uploads/bc2b43c2-ede6-4c67-9861-fde94c62eec0.png"
     },
     {
       id: 12,
       name: "Basics Vinyl Kettlebell",
       description: "",
-      amazonLink: "https://amzn.to/42BvPG1",
+      amazonLink: "https://www.amazon.com/dp/B0731D37LZ?tag=vwhealthstore-20",
       image: "/lovable-uploads/29ab1bf7-086a-403d-9ff5-4beaf1ff6d92.png"
     },
     {
       id: 13,
       name: "Fit Simplify Resistance Loop Exercise Bands with Instruction Guide and Carry Bag, Set of 5",
       description: "",
-      amazonLink: "https://a.co/d/7y1atic",
+      amazonLink: "https://www.amazon.com/dp/B01AVDVHTI?tag=vwhealthstore-20",
       image: "/lovable-uploads/57ff4c34-9e9e-4c27-81ca-f374ef264a0c.png"
     },
     // Fourth row with regular items
@@ -91,7 +91,7 @@ const Products = () => {
       id: 14,
       name: "Tune Up Fitness Yoga Set - Various Ball Sizes and Colors, Original, Plus, Alpha Solo, Coregeous in Black Bag",
       description: "",
-      amazonLink: "https://a.co/d/gAuFGjZ",
+      amazonLink: "https://www.amazon.com/dp/B01N9AY1JG?tag=vwhealthstore-20",
       image: "/lovable-uploads/4059073a-82fd-42d4-8e97-c6d3fd1df244.png"
     },
     // Last item - Peloton Tread at the end
@@ -99,7 +99,7 @@ const Products = () => {
       id: 17,
       name: "Peloton Tread | Treadmill for Running, Walking, and Hiking with Manual or Auto-Incline Options and Immersive 24\" HD Touchscreen",
       description: "",
-      amazonLink: "https://amzn.to/438E8sY",
+      amazonLink: "https://www.amazon.com/dp/B09LY8X66W?tag=vwhealthstore-20",
       image: "/lovable-uploads/b1498311-c3be-4f82-aa6b-4f907f475446.png"
     }
   ];
@@ -136,7 +136,7 @@ const Products = () => {
             <Button 
               variant="ghost" 
               className="bg-white/50 backdrop-blur-sm text-primary hover:bg-white hover:text-primary/80 text-base md:text-xl font-medium rounded-full px-4 py-3 soft-shadow text-center font-sans w-full max-w-lg flex flex-wrap justify-center"
-              onClick={() => window.open("https://amzn.to/4jyWrxp", "_blank")}
+              onClick={() => window.open("https://www.amazon.com?tag=vwhealthstore-20", "_blank")}
             >
               <ShoppingCart className="mr-2 flex-shrink-0" size={20} />
               <span className="text-center">
