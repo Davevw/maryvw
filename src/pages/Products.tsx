@@ -103,10 +103,10 @@ const Products = () => {
     },
     {
       id: 13,
-      name: "Thorne Ultimate-E",
-      description: "Contains all natural forms of Vitamin E for antioxidant support, cardiovascular health, and skin protection. Helps neutralize free radicals and supports cellular health.",
-      amazonLink: "https://amzn.to/4qZlM6R",
-      image: "/lovable-uploads/thorne-ultimate-e.png"
+      name: "THORNE - Super EPA - Omega-3 Fatty Acids EPA 425mg & DHA 270mg Supplement - Support Brain, Cardiovascular, Joints & Skin* - Gluten, Dairy & Soy-Free",
+      description: "",
+      amazonLink: "https://amzn.to/4qFvmft",
+      image: "/lovable-uploads/thorne-super-epa.png"
     },
     {
       id: 14,
