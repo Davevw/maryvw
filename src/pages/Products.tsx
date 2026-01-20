@@ -103,8 +103,8 @@ const Products = () => {
     },
     {
       id: 13,
-      name: "THORNE - Super EPA - Omega-3 Fatty Acids EPA 425mg & DHA 270mg Supplement - Support Brain, Cardiovascular, Joints & Skin* - Gluten, Dairy & Soy-Free",
-      description: "",
+      name: "Thorne Super EPA",
+      description: "Omega-3 fatty acids with EPA 425mg & DHA 270mg to support brain, cardiovascular, joints, and skin health. Gluten, dairy, and soy-free.",
       amazonLink: "https://amzn.to/4qFvmft",
       image: "/lovable-uploads/thorne-super-epa.png"
     },
