@@ -285,6 +285,118 @@ const Food = () => {
           </section>
         )}
 
+        {/* Greek Romaine Salad Spotlight */}
+        <section className="py-16 px-6 md:px-12 bg-accent/10">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">
+              Recipe Spotlight
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="bg-white rounded-2xl p-2 soft-shadow scale-75">
+                <AspectRatio ratio={4/3}>
+                  <img 
+                    src="/lovable-uploads/greek-romaine-salad.jpg" 
+                    alt="Mary's Greek Romaine Salad"
+                    className="object-cover w-full h-full rounded-xl"
+                  />
+                </AspectRatio>
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-xs uppercase tracking-wide text-primary font-medium">
+                    Salad Recipe
+                  </span>
+                  <span className="text-xs text-muted-foreground flex items-center gap-1">
+                    <Clock className="w-3 h-3" />
+                    20 mins
+                  </span>
+                </div>
+                <h3 className="text-3xl md:text-4xl font-serif mb-6">
+                  Greek Romaine Salad
+                </h3>
+                <p className="text-lg mb-6 text-foreground/80">
+                  A crisp, colorful salad bursting with Mediterranean flavor — perfect as a light lunch 
+                  or a refreshing side dish for grilled meats and seafood.
+                </p>
+                <div className="space-y-4 mb-6">
+                  <div>
+                    <h4 className="font-semibold mb-2">Key Features:</h4>
+                    <ul className="text-sm text-foreground/80 space-y-1">
+                      <li>• Fresh Mediterranean vegetables</li>
+                      <li>• Homemade lemon Dijon dressing</li>
+                      <li>• Crumbled feta cheese topping</li>
+                      <li>• Optional protein add-ins</li>
+                    </ul>
+                  </div>
+                </div>
+                <Button 
+                  className="bg-primary hover:bg-primary/90 rounded-full px-8"
+                  onClick={() => setShowSaladRecipe(!showSaladRecipe)}
+                >
+                  {showSaladRecipe ? "Hide Recipe" : "View Full Recipe"}
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Greek Romaine Salad Full Recipe */}
+        {showSaladRecipe && (
+          <section className="py-16 px-6 md:px-12">
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-white rounded-2xl p-8 soft-shadow">
+                <h3 className="text-2xl font-serif mb-6">Greek Romaine Salad - Full Recipe</h3>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                  <div>
+                    <h4 className="font-semibold mb-4">Ingredients:</h4>
+                    <ul className="space-y-2 text-sm">
+                      <li>• 1 head romaine lettuce, cleaned and chopped</li>
+                      <li>• 3 Persian cucumbers, thinly sliced</li>
+                      <li>• ½ red bell pepper, chopped</li>
+                      <li>• ½ yellow bell pepper, chopped</li>
+                      <li>• 2 tomatoes, diced</li>
+                      <li>• ¼ red onion, thinly sliced</li>
+                      <li>• 1 green onion, chopped</li>
+                      <li>• ¼ cup pepperoncini, sliced</li>
+                      <li>• Handful of black olives, chopped</li>
+                      <li>• Feta cheese, crumbled (for topping)</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold mb-4">Dressing:</h4>
+                    <ul className="space-y-2 text-sm">
+                      <li>• ¼ cup extra virgin olive oil</li>
+                      <li>• Juice of 2 lemons</li>
+                      <li>• 1 garlic clove, minced</li>
+                      <li>• 1 tablespoon Dijon mustard</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold mb-3">Directions:</h4>
+                    <div className="space-y-4 text-sm">
+                      <ol className="list-decimal list-inside space-y-3 ml-4">
+                        <li>Clean, dry, and chop the romaine lettuce. Lay it evenly at the bottom of a large salad bowl.</li>
+                        <li>Arrange cucumbers, bell peppers, tomatoes, red onion, green onion, pepperoncini, and olives on top.</li>
+                        <li>In a small jar or bowl, combine olive oil, lemon juice, minced garlic, and Dijon mustard. Shake or whisk well until blended.</li>
+                        <li>Drizzle dressing over the salad just before serving and toss gently to coat.</li>
+                        <li>Top with crumbled feta cheese and serve immediately.</li>
+                      </ol>
+                      <p className="text-foreground/70 italic mt-4">
+                        Optional: Add cooked chickpeas or grilled chicken for extra protein and heartiness.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* About Food Philosophy Section */}
         <section className="py-16 px-6 md:px-12 bg-accent/20">
           <div className="max-w-7xl mx-auto">
