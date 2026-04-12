@@ -10,6 +10,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Food = () => {
   const [showFullRecipe, setShowFullRecipe] = useState(false);
+  const [showSaladRecipe, setShowSaladRecipe] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
