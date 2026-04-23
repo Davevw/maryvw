@@ -1,81 +1,66 @@
-
-import { Table, TableHeader, TableBody, TableHead, TableRow, TableCell } from "@/components/ui/table";
-import { Calendar } from "lucide-react";
-
 const ClassSchedule = () => {
   const scheduleData = [
-    {
-      day: "M",
-      time: "8 AM",
-      type: "Strength",
-      format: "Zoom",
-      length: "30 mins"
-    },
-    {
-      day: "T",
-      time: "9 AM",
-      type: "Stretch & Breath",
-      format: "Zoom + (Sea Cliff residents)",
-      length: "60 mins"
-    },
-    {
-      day: "W",
-      time: "8 AM",
-      type: "Strength",
-      format: "Zoom",
-      length: "30 mins"
-    },
-    {
-      day: "Th",
-      time: "8 AM",
-      type: "Strength",
-      format: "Zoom",
-      length: "30 mins"
-    },
-    {
-      day: "Fr",
-      time: "8 AM",
-      type: "Strength",
-      format: "Zoom",
-      length: "30 mins"
-    }
+    { day: "Monday", time: "8:00 AM", type: "Strength", format: "Zoom", length: "30 min" },
+    { day: "Tuesday", time: "9:00 AM", type: "Stretch & Breath", format: "Zoom + Sea Cliff residents", length: "60 min" },
+    { day: "Wednesday", time: "8:00 AM", type: "Strength", format: "Zoom", length: "30 min" },
+    { day: "Thursday", time: "8:00 AM", type: "Strength", format: "Zoom", length: "30 min" },
+    { day: "Friday", time: "8:00 AM", type: "Strength", format: "Zoom", length: "30 min" },
   ];
 
   return (
-    <section className="py-24 md:py-32 px-6 md:px-12">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex items-center justify-center gap-3 mb-12">
-          <Calendar className="w-8 h-8 text-primary" />
-          <h2 className="text-3xl md:text-4xl font-serif text-center">Weekly Class Schedule</h2>
+    <section className="py-24 md:py-36 px-6 md:px-12 bg-secondary/40">
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-16">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="hairline-gold" />
+            <span className="eyebrow-accent">Weekly Schedule</span>
+            <span className="hairline-gold" />
+          </div>
+          <h2 className="font-serif font-normal text-foreground text-3xl md:text-5xl leading-[1.1] tracking-tight mb-6">
+            A rhythm of
+            <span className="italic text-primary"> strength & stillness.</span>
+          </h2>
+          <p className="text-foreground/70 leading-relaxed font-light max-w-xl mx-auto">
+            Live classes designed to fit into real life — short enough to keep,
+            long enough to matter.
+          </p>
         </div>
-        
-        <p className="text-center mb-8 max-w-2xl mx-auto">
-          Energetic and motivating group classes including yoga and strength training that build community while helping participants achieve their fitness goals.
-        </p>
-        
-        <div className="overflow-x-auto">
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Day</TableHead>
-                <TableHead>Time</TableHead>
-                <TableHead>Type</TableHead>
-                <TableHead>Format</TableHead>
-                <TableHead>Length</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {scheduleData.map((item, index) => (
-                <TableRow key={index}>
-                  <TableCell className="font-medium">{item.day}</TableCell>
-                  <TableCell>{item.time}</TableCell>
-                  <TableCell>{item.type}</TableCell>
-                  <TableCell>{item.format}</TableCell>
-                  <TableCell>{item.length}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
+
+        {/* Spa-menu table */}
+        <div className="bg-background/60 border border-gold/30 rounded-sm p-8 md:p-12 frame-shadow">
+          {/* Column header */}
+          <div className="hidden md:grid grid-cols-12 gap-4 pb-4 mb-4 border-b border-border/60">
+            <div className="col-span-3 eyebrow text-foreground/50">Day</div>
+            <div className="col-span-2 eyebrow text-foreground/50">Time</div>
+            <div className="col-span-3 eyebrow text-foreground/50">Class</div>
+            <div className="col-span-3 eyebrow text-foreground/50">Format</div>
+            <div className="col-span-1 eyebrow text-foreground/50 text-right">Length</div>
+          </div>
+
+          <div className="divide-y divide-border/40">
+            {scheduleData.map((item, i) => (
+              <div
+                key={i}
+                className="grid grid-cols-2 md:grid-cols-12 gap-3 md:gap-4 py-5 md:py-6 items-baseline"
+              >
+                <div className="col-span-2 md:col-span-3 font-serif text-xl md:text-2xl text-foreground">
+                  {item.day}
+                </div>
+                <div className="col-span-1 md:col-span-2 eyebrow text-gold">
+                  {item.time}
+                </div>
+                <div className="col-span-1 md:col-span-3 font-serif italic text-lg text-primary">
+                  {item.type}
+                </div>
+                <div className="col-span-2 md:col-span-3 text-sm text-foreground/70 font-light">
+                  {item.format}
+                </div>
+                <div className="col-span-2 md:col-span-1 md:text-right eyebrow text-foreground/50">
+                  {item.length}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -1,41 +1,94 @@
-
-import { cn } from "@/lib/utils";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const About = () => {
   return (
-    <section id="about" className="py-24 md:py-32 px-6 md:px-12 relative overflow-hidden bg-secondary/20">
+    <section
+      id="about"
+      className="py-24 md:py-36 px-6 md:px-12 relative overflow-hidden bg-secondary/50"
+    >
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-serif mb-8 text-primary">About Mary's Journey of Fitness and Wellness</h2>
-            <div className="space-y-6">
-              <p className="text-lg font-sans">
-                Customized one-on-one training sessions designed to meet your specific fitness goals, whether it's weight loss, muscle gain, or improved overall health and wellness.
-              </p>
-              <p className="font-sans">
-                For 18 years, Mary was a cornerstone at the world-renowned <a href="https://www.cal-a-vie.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Cal-a-Vie Health Spa</a> and the <a href="https://goldendoor.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Golden Door</a>. Nestled among rolling hills, these prestigious wellness destinations provided the perfect backdrop for Mary to develop her holistic approach to fitness and wellness.
-              </p>
-              <p className="font-sans">
-                Mary brings over two decades of experience as a fitness expert and wellness coach, sharing her passion for empowering individuals to embrace healthier, happier lives. With a holistic approach, Mary blends physical activity, emotional well-being, and lifestyle inspiration.
-              </p>
-              <button className="text-sm uppercase tracking-wider mt-6 px-5 py-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors text-primary">
-                Read More
-              </button>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-20 items-center">
+          {/* Editorial photo frame */}
+          <div className="md:col-span-5 order-2 md:order-1">
+            <div className="relative max-w-md mx-auto md:mx-0">
+              <div
+                className="absolute -inset-3 md:-inset-5 border border-gold/40 rounded-sm"
+                aria-hidden
+              />
+              <div
+                className="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 w-20 h-20 md:w-32 md:h-32 bg-accent/15 rounded-sm -z-10"
+                aria-hidden
+              />
+              <div className="relative overflow-hidden rounded-sm frame-shadow bg-secondary">
+                <AspectRatio ratio={3 / 4}>
+                  <img
+                    src="/lovable-uploads/f7de588b-9a90-4d52-8160-29552d535d5b.png"
+                    alt="Serene wooden bridge in nature — Mary's wellness sanctuary"
+                    className="object-cover w-full h-full"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="mt-6 flex items-center gap-3">
+                <span className="hairline-gold" />
+                <span className="eyebrow text-foreground/60">
+                  Led by Mary · Cal-a-Vie & Golden Door alumna
+                </span>
+              </div>
             </div>
           </div>
-          
-          <div className="flex items-center justify-center md:justify-end">
-            <div className="relative w-full max-w-md aspect-[3/4] overflow-hidden rounded-2xl border border-accent/30 shadow-sm animate-gentle-pulse">
-              <AspectRatio ratio={3/4}>
-                <img 
-                  src="/lovable-uploads/f7de588b-9a90-4d52-8160-29552d535d5b.png" 
-                  alt="Wooden bridge over a stream surrounded by greenery" 
-                  className="object-cover w-full h-full"
-                />
-              </AspectRatio>
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+
+          {/* Copy */}
+          <div className="md:col-span-7 order-1 md:order-2">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="hairline-gold" />
+              <span className="eyebrow-accent">About Mary</span>
             </div>
+
+            <h2 className="font-serif font-normal text-foreground text-3xl md:text-4xl lg:text-5xl leading-[1.1] tracking-tight mb-8">
+              Two decades of guiding people toward
+              <span className="italic text-primary"> stronger, calmer, more grounded </span>
+              everyday lives.
+            </h2>
+
+            <div className="space-y-5 text-foreground/80 leading-relaxed font-light max-w-2xl">
+              <p>
+                For 18 years, Mary was a cornerstone at the world-renowned{" "}
+                <a
+                  href="https://www.cal-a-vie.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline-offset-4 hover:underline"
+                >
+                  Cal-a-Vie Health Spa
+                </a>{" "}
+                and{" "}
+                <a
+                  href="https://goldendoor.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline-offset-4 hover:underline"
+                >
+                  Golden Door
+                </a>
+                . Among the rolling California hills, she developed a quiet,
+                holistic approach to fitness — one that honors how the body
+                actually moves through real life.
+              </p>
+              <p>
+                Today, Mary brings that same attentive, spa-rooted philosophy
+                online: live Zoom classes, personal training, nutrition
+                guidance, and gentle wellness inspiration designed to help you
+                feel stronger, more grounded, and more energized.
+              </p>
+            </div>
+
+            <blockquote className="mt-10 pl-6 border-l-2 border-gold/60 italic font-serif text-xl md:text-2xl text-foreground/85 max-w-xl">
+              "Wellness isn't a destination — it's the way you show up for
+              yourself, every single day."
+              <footer className="mt-3 eyebrow text-foreground/50 not-italic font-sans">
+                — Mary
+              </footer>
+            </blockquote>
           </div>
         </div>
       </div>
