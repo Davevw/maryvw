@@ -26,6 +26,8 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const forceSolidNav = location.pathname === "/food";
+
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
@@ -45,8 +47,8 @@ const Navbar = () => {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-        scrolled
-          ? "bg-background/90 backdrop-blur-md border-b border-border/50 py-3"
+        scrolled || forceSolidNav
+          ? "bg-background/92 backdrop-blur-md border-b border-border/60 py-3"
           : "bg-transparent py-5"
       )}
     >
@@ -65,7 +67,10 @@ const Navbar = () => {
               <button
                 key={link.name}
                 onClick={() => handleHashNavigation(link.href)}
-                className="text-[0.7rem] font-sans uppercase tracking-[0.2em] text-foreground/80 hover:text-foreground transition-colors px-4 py-2 link-underline"
+                className={cn(
+                  "text-[0.7rem] font-sans uppercase tracking-[0.2em] hover:text-foreground transition-colors px-4 py-2 link-underline",
+                  scrolled || forceSolidNav ? "text-foreground" : "text-foreground/80"
+                )}
               >
                 {link.name}
               </button>
@@ -73,7 +78,10 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.href}
-                className="text-[0.7rem] font-sans uppercase tracking-[0.2em] text-foreground/80 hover:text-foreground transition-colors px-4 py-2 link-underline"
+                className={cn(
+                  "text-[0.7rem] font-sans uppercase tracking-[0.2em] hover:text-foreground transition-colors px-4 py-2 link-underline",
+                  scrolled || forceSolidNav ? "text-foreground" : "text-foreground/80"
+                )}
               >
                 {link.name}
               </Link>
