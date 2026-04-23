@@ -1,69 +1,115 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* =========================================================
+   Mary's Fitness Channel — Design System
+   Refined coastal-wellness palette: sage, cream, clay, gold
+   All colors HSL. Inspired by California spa aesthetic.
+   ========================================================= */
+
 @layer base {
   :root {
-    --background: 30 30% 99%;
-    --foreground: 240 10% 3.9%;
+    /* Base surfaces — warm cream & ivory */
+    --background: 40 33% 96%;          /* warm ivory */
+    --foreground: 80 8% 18%;           /* deep olive-charcoal */
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card: 40 40% 98%;
+    --card-foreground: 80 8% 18%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover: 40 40% 98%;
+    --popover-foreground: 80 8% 18%;
 
-    --primary: 320 40% 45%;
-    --primary-foreground: 0 0% 98%;
+    /* Primary — muted sage green (botanical, calming) */
+    --primary: 95 18% 38%;
+    --primary-foreground: 40 40% 97%;
+    --primary-glow: 95 22% 55%;
 
-    --secondary: 300 15% 92%;
-    --secondary-foreground: 240 5.9% 10%;
+    /* Secondary — soft cream/linen */
+    --secondary: 40 25% 92%;
+    --secondary-foreground: 80 8% 18%;
 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    /* Muted — soft taupe */
+    --muted: 35 15% 90%;
+    --muted-foreground: 80 6% 40%;
 
-    --accent: 300 20% 90%;
-    --accent-foreground: 240 5.9% 10%;
+    /* Accent — warm terracotta clay */
+    --accent: 18 45% 55%;
+    --accent-foreground: 40 40% 97%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    /* Gold — tasteful luxury accent */
+    --gold: 38 45% 55%;
+    --gold-foreground: 80 8% 18%;
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 320 40% 45%;
+    /* Sage variations */
+    --sage-light: 95 20% 88%;
+    --sage-deep: 95 22% 28%;
 
-    --radius: 1rem;
+    /* Clay variations */
+    --clay-light: 18 35% 85%;
+    --clay-deep: 15 40% 38%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 40 40% 97%;
+
+    --border: 40 20% 86%;
+    --input: 40 20% 86%;
+    --ring: 95 18% 38%;
+
+    --radius: 0.5rem;
+
+    /* Premium gradients */
+    --gradient-hero: linear-gradient(180deg, hsl(40 33% 96%) 0%, hsl(95 15% 92%) 100%);
+    --gradient-sage: linear-gradient(135deg, hsl(95 18% 38%) 0%, hsl(95 22% 55%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(40 33% 96%) 0%, hsl(35 30% 90%) 100%);
+    --gradient-overlay: linear-gradient(180deg, hsl(80 8% 18% / 0) 0%, hsl(80 8% 18% / 0.55) 100%);
+
+    /* Elegant shadows */
+    --shadow-soft: 0 1px 2px hsl(80 8% 18% / 0.04), 0 4px 16px hsl(80 8% 18% / 0.06);
+    --shadow-elegant: 0 8px 32px -8px hsl(95 22% 28% / 0.18);
+    --shadow-frame: 0 20px 60px -20px hsl(80 8% 18% / 0.25);
+
+    /* Motion */
+    --ease-elegant: cubic-bezier(0.32, 0.72, 0, 1);
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 80 8% 10%;
+    --foreground: 40 30% 92%;
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 80 8% 12%;
+    --card-foreground: 40 30% 92%;
 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 80 8% 12%;
+    --popover-foreground: 40 30% 92%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
+    --primary: 95 22% 55%;
+    --primary-foreground: 80 8% 10%;
+    --primary-glow: 95 22% 65%;
 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 80 8% 18%;
+    --secondary-foreground: 40 30% 92%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 80 8% 18%;
+    --muted-foreground: 40 15% 70%;
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 18 45% 60%;
+    --accent-foreground: 80 8% 10%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --gold: 38 45% 60%;
+    --gold-foreground: 80 8% 10%;
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+    --sage-light: 95 15% 25%;
+    --sage-deep: 95 22% 70%;
+    --clay-light: 18 25% 25%;
+    --clay-deep: 18 45% 65%;
+
+    --destructive: 0 60% 45%;
+    --destructive-foreground: 40 30% 92%;
+
+    --border: 80 8% 22%;
+    --input: 80 8% 22%;
+    --ring: 95 22% 55%;
   }
 }
 
@@ -72,30 +118,93 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground font-sans;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif tracking-wide;
+    @apply font-serif;
+    font-feature-settings: "ss01" 1, "liga" 1;
+    letter-spacing: -0.01em;
   }
-  
-  p, span, a, button, li {
+
+  h1 { letter-spacing: -0.02em; }
+
+  p, span, a, button, li, label, input, textarea {
     @apply font-sans;
   }
 }
 
 @layer utilities {
+  /* Editorial eyebrow label — small caps uppercase tag above headlines */
+  .eyebrow {
+    @apply font-sans uppercase text-xs tracking-[0.25em] text-muted-foreground;
+    font-weight: 500;
+  }
+
+  .eyebrow-accent {
+    @apply font-sans uppercase text-xs tracking-[0.25em] text-accent;
+    font-weight: 600;
+  }
+
+  /* Underline link with elegant transition */
   .link-underline {
-    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full;
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-500;
   }
-  
+  .link-underline:hover::after {
+    @apply w-full;
+  }
+
   .soft-shadow {
-    @apply shadow-[0_4px_12px_rgba(0,0,0,0.08)];
+    box-shadow: var(--shadow-soft);
   }
-  
+
+  .elegant-shadow {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .frame-shadow {
+    box-shadow: var(--shadow-frame);
+  }
+
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+    @apply transition-all duration-500;
+    transition-timing-function: var(--ease-elegant);
+  }
+  .card-hover:hover {
+    box-shadow: var(--shadow-elegant);
+    transform: translateY(-2px);
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-sage {
+    background: var(--gradient-sage);
+  }
+
+  .gradient-warm {
+    background: var(--gradient-warm);
+  }
+
+  /* Gold accent text */
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+
+  /* Hairline divider */
+  .hairline {
+    @apply h-px w-12 bg-foreground/30;
+  }
+
+  .hairline-gold {
+    @apply h-px w-12;
+    background-color: hsl(var(--gold));
   }
 }

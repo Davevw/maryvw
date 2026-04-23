@@ -53,10 +53,23 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				gold: {
+					DEFAULT: 'hsl(var(--gold))',
+					foreground: 'hsl(var(--gold-foreground))'
+				},
+				sage: {
+					light: 'hsl(var(--sage-light))',
+					deep: 'hsl(var(--sage-deep))',
+				},
+				clay: {
+					light: 'hsl(var(--clay-light))',
+					deep: 'hsl(var(--clay-deep))',
+				},
 			},
 			fontFamily: {
-				'serif': ['Playfair Display', 'serif'],
-				'sans': ['Work Sans', 'sans-serif'],
+				'serif': ['"Cormorant Garamond"', 'Playfair Display', 'serif'],
+				'sans': ['Karla', '"Work Sans"', 'sans-serif'],
+				'display': ['"Cormorant Garamond"', 'serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
