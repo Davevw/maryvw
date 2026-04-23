@@ -36,9 +36,10 @@ const About = () => {
                 </span>
               </div>
 
-              {/* Mary's Fitness Channel — viewable & downloadable presentation */}
-              <FitnessChannelPresentation />
             </div>
+
+            {/* Mary's Fitness Channel — viewable & downloadable presentation */}
+            <FitnessChannelPresentation />
           </div>
 
           {/* Copy */}
