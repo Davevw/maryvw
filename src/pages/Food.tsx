@@ -78,7 +78,7 @@ const Food = () => {
         
         {/* Hero Section */}
         <section 
-          className="pt-32 pb-16 px-6 md:px-12 relative"
+          className="pt-48 md:pt-56 pb-16 px-6 md:px-12 relative"
           style={{
             backgroundImage: "url('/lovable-uploads/df4d7ada-910a-4fe9-ac91-7befc3525cac.png')",
             backgroundSize: "cover",

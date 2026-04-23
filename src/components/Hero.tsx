@@ -40,11 +40,7 @@ const Hero = () => {
               style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
             >
               <h1 className="font-serif font-normal text-foreground text-[2.75rem] sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight mb-6">
-                A world of fitness,
-                <br />
-                <span className="italic text-primary">health & everyday</span>
-                <br />
-                wellness.
+                A world of fitness, health & everyday wellness.
               </h1>
             </div>
 
