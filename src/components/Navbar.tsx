@@ -53,7 +53,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-12">
         {/* Wordmark */}
         <Link to="/" className="leading-none group">
-          <span className="font-serif text-xl md:text-2xl tracking-tight text-foreground whitespace-nowrap">
+          <span className="font-serif font-semibold text-xl md:text-2xl tracking-tight text-sage-deep whitespace-nowrap">
             Mary's Fitness Channel
           </span>
         </Link>
