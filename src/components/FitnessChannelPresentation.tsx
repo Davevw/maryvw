@@ -76,7 +76,7 @@ const FitnessChannelPresentation = () => {
               variant="default"
               size="sm"
               onClick={() => setVideoOpen(true)}
-              className="w-full bg-[hsl(var(--sage-deep))] text-cream hover:bg-[hsl(var(--sage-deep))]/90 font-light tracking-wide"
+              className="w-full bg-[hsl(var(--sage-deep))] text-white hover:bg-[hsl(var(--sage-deep))]/90 font-light tracking-wide"
             >
               <Play className="w-4 h-4 mr-2 fill-current" /> Watch the video
             </Button>
