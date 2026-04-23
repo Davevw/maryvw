@@ -9,6 +9,7 @@ import OtherServices from "./pages/OtherServices";
 import Products from "./pages/Products";
 import Food from "./pages/Food";
 import NotFound from "./pages/NotFound";
+import BeforeYouGoModal from "./components/BeforeYouGoModal";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <BeforeYouGoModal />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
