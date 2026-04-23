@@ -158,7 +158,7 @@ const Products = () => {
         
         {/* Hero Section with Beach Yoga Background */}
         <section 
-          className="pt-32 pb-16 px-6 md:px-12 relative"
+          className="pt-48 md:pt-56 pb-16 px-6 md:px-12 relative"
           style={{
             backgroundImage: "url('/lovable-uploads/a2b1242f-5986-48a7-94fc-11ac93ccc123.png')",
             backgroundSize: "cover",

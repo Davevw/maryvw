@@ -26,7 +26,9 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
-  const isFoodPage = location.pathname === "/food";
+  // Pages with a full-bleed photo hero — use white nav over image while at top
+  const photoHeroPages = ["/food", "/products"];
+  const isPhotoHeroPage = photoHeroPages.includes(location.pathname);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -43,8 +45,8 @@ const Navbar = () => {
     { name: "Contact", href: "/#contact" },
   ];
 
-  // Food page: white nav over the photo at the top, solid cream once scrolled
-  const foodTopMode = isFoodPage && !scrolled;
+  // White nav over the photo at the top, solid cream once scrolled
+  const foodTopMode = isPhotoHeroPage && !scrolled;
 
   return (
     <nav
