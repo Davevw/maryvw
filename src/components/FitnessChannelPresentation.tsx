@@ -5,7 +5,7 @@ import { useState } from "react";
 import cover from "@/assets/fitness-channel/slide-1.jpg";
 
 // Drop in a video URL when ready (YouTube embed, Vimeo embed, or direct .mp4)
-const VIDEO_URL: string | null = null;
+const VIDEO_URL: string | null = "/marys-fitness-channel.mp4";
 const PDF_URL = "/marys-fitness-channel.pdf";
 
 const FitnessChannelPresentation = () => {
@@ -133,7 +133,14 @@ const FitnessChannelPresentation = () => {
                   title="Mary's Fitness Channel video"
                 />
               ) : (
-                <video src={VIDEO_URL} controls className="w-full h-full" />
+                <video
+                  src={VIDEO_URL}
+                  controls
+                  controlsList="nodownload noplaybackrate"
+                  disablePictureInPicture
+                  onContextMenu={(e) => e.preventDefault()}
+                  className="w-full h-full"
+                />
               )}
             </div>
           )}
