@@ -26,7 +26,7 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
-  const forceSolidNav = location.pathname === "/food";
+  const isFoodPage = location.pathname === "/food";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -43,19 +43,29 @@ const Navbar = () => {
     { name: "Contact", href: "/#contact" },
   ];
 
+  // Food page: white nav over the photo at the top, solid cream once scrolled
+  const foodTopMode = isFoodPage && !scrolled;
+
   return (
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-        scrolled || forceSolidNav
+        scrolled
           ? "bg-background/92 backdrop-blur-md border-b border-border/60 py-3"
-          : "bg-transparent py-5"
+          : foodTopMode
+            ? "bg-foreground/40 backdrop-blur-sm py-3"
+            : "bg-transparent py-5"
       )}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-12">
         {/* Wordmark */}
         <Link to="/" className="leading-none group">
-          <span className="font-serif font-semibold text-xl md:text-2xl tracking-tight text-sage-deep whitespace-nowrap">
+          <span
+            className={cn(
+              "font-serif font-semibold text-xl md:text-2xl tracking-tight whitespace-nowrap",
+              foodTopMode ? "text-background" : "text-sage-deep"
+            )}
+          >
             Mary's Fitness Channel
           </span>
         </Link>
@@ -68,8 +78,12 @@ const Navbar = () => {
                 key={link.name}
                 onClick={() => handleHashNavigation(link.href)}
                 className={cn(
-                  "text-[0.7rem] font-sans uppercase tracking-[0.2em] hover:text-foreground transition-colors px-4 py-2 link-underline",
-                  scrolled || forceSolidNav ? "text-foreground" : "text-foreground/80"
+                  "text-[0.7rem] font-sans uppercase tracking-[0.2em] transition-colors px-4 py-2 link-underline",
+                  foodTopMode
+                    ? "text-background hover:text-background/80"
+                    : scrolled
+                      ? "text-foreground hover:text-foreground/80"
+                      : "text-foreground/80 hover:text-foreground"
                 )}
               >
                 {link.name}
@@ -79,8 +93,12 @@ const Navbar = () => {
                 key={link.name}
                 to={link.href}
                 className={cn(
-                  "text-[0.7rem] font-sans uppercase tracking-[0.2em] hover:text-foreground transition-colors px-4 py-2 link-underline",
-                  scrolled || forceSolidNav ? "text-foreground" : "text-foreground/80"
+                  "text-[0.7rem] font-sans uppercase tracking-[0.2em] transition-colors px-4 py-2 link-underline",
+                  foodTopMode
+                    ? "text-background hover:text-background/80"
+                    : scrolled
+                      ? "text-foreground hover:text-foreground/80"
+                      : "text-foreground/80 hover:text-foreground"
                 )}
               >
                 {link.name}
@@ -91,7 +109,10 @@ const Navbar = () => {
 
         {/* Mobile button */}
         <button
-          className="md:hidden text-foreground"
+          className={cn(
+            "md:hidden",
+            foodTopMode ? "text-background" : "text-foreground"
+          )}
           onClick={toggleMenu}
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
