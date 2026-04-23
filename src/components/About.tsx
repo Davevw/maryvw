@@ -1,4 +1,5 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import FitnessChannelPresentation from "@/components/FitnessChannelPresentation";
 
 const About = () => {
   return (
@@ -34,6 +35,9 @@ const About = () => {
                   Led by Mary · Cal-a-Vie & Golden Door alumna
                 </span>
               </div>
+
+              {/* Mary's Fitness Channel — viewable & downloadable presentation */}
+              <FitnessChannelPresentation />
             </div>
           </div>
 
