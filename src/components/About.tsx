@@ -11,7 +11,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-20 items-center">
           {/* Editorial photo frame */}
           <div className="md:col-span-5 order-2 md:order-1">
-            <div className="relative max-w-md mx-auto md:mx-0">
+            <div className="relative max-w-[280px] mx-auto md:mx-0">
               <div
                 className="absolute -inset-3 md:-inset-5 border border-gold/40 rounded-sm"
                 aria-hidden
