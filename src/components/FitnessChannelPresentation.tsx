@@ -120,7 +120,7 @@ const FitnessChannelPresentation = () => {
 
       {/* Video modal */}
       <Dialog open={videoOpen} onOpenChange={setVideoOpen}>
-        <DialogContent className="max-w-4xl w-[95vw] p-0 bg-black overflow-hidden">
+        <DialogContent className="max-w-4xl w-[95vw] p-0 bg-black overflow-hidden [&>button]:hidden">
           <DialogTitle className="sr-only">Mary's Fitness Channel — Video</DialogTitle>
           {VIDEO_URL && (
             <div className="aspect-video w-full">
